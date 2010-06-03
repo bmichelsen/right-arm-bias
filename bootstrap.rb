@@ -33,7 +33,13 @@ pattern_names.delete("..")
 pattern_names.each { |element|
   @new_pattern = Pattern.new;
   @new_pattern.attributes = { :name => "#{element}" };
-  @new_pattern.save;
+  if @new_pattern.save;
+    # object saved
+  else
+    @new_pattern.errors.each do |e|
+      puts e
+    end
+  end
 }
 
 # ----------------------------------------------------------------------
@@ -102,7 +108,6 @@ all_pattern_filenames.each { |element|
 # remove instances of brackets ('[' and ']'), quotation
 # marks ('"'), back slashes ('\'), commas (',') and new
 # lines ('\n')
-
 @tags = @tags.to_s.gsub(/"|\[|\]|\\n|\\|\,/, '')
 
 # create an array with all tag words
@@ -112,11 +117,15 @@ all_pattern_filenames.each { |element|
 @tags.uniq!
 
 # insert tags into database
-
 @tags.each { |tag|
   @new_tag = Tag.new;
   @new_tag.attributes = { :name => "#{tag}" };
-  @new_tag.save;
+  if @new_tag.save;
+    # object saved
+  else
+    @new_tag.errors.each.do |e|
+      puts e
+  end
 }
 
 # ----------------------------------------------------------------------
@@ -174,7 +183,6 @@ all_pattern_filenames.each { |element|
       
       # associate the tag to the movement
       @new_movement.tags << @t;
-
     }
 
     # get the english description
@@ -184,7 +192,13 @@ all_pattern_filenames.each { |element|
     @new_movement.description = description;
 
     # save the object to the database
-    @new_movement.save;
+    if @new_movement.save;
+      # object saved
+    else
+      @new_movement.errors.each do |e|
+        puts e
+      end
+    end
   }
 
 }
