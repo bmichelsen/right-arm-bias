@@ -2,17 +2,21 @@ Kwang-Gae
 
 1.
 Moa junbi sogi B
-Bring the left foot to the right foot, forming a close ready stance B toward D, bringing both hands in a circular motion.
-2.  Gunnun so dwijibo jirugi
-    walking_stance, left_stance, middle_technique, right_technique, attack, punch, upset_punch, slow_motion
-  
-  Move the left foot to D, forming a left walking stance toward D while executing an upset punch to D with the right fist. Perform in a slow motion.
-3.  Gunnun so dwijibo jirugi
-walking_stance, right_stance, middle_technique, left_technique, attack, punch, upset_punch, slow_motion
-    Move the right foot to D, forming a right walking stance toward D while executing an upset punch to D with the left fist. Perform in a slow motion.
 
-4
-.  Gunnun so sonbadak baro golcho makgi
+Bring the left foot to the right foot, forming a close ready stance B toward D, bringing both hands in a circular motion.
+
+2.
+Gunnun so dwijibo jirugi
+walking_stance, left_stance, middle_technique, right_technique, attack, punch, upset_punch, slow_motion
+Move the left foot to D, forming a left walking stance toward D while executing an upset punch to D with the right fist. Perform in a slow motion.
+
+3.
+Gunnun so dwijibo jirugi
+walking_stance, right_stance, middle_technique, left_technique, attack, punch, upset_punch, slow_motion
+Move the right foot to D, forming a right walking stance toward D while executing an upset punch to D with the left fist. Perform in a slow motion.
+
+4.
+Gunnun so sonbadak baro golcho makgi
 walking_stance, right_stance, high_technique, right_technique, block, hooking_block, palm, double_stepping_motion
 Move the left foot to the side front of the right foot, and then move the right foot to D, forming a right walking stance toward D, at the same time executing a high hooking block to D with the right palm. Perform in a double stepping motion.
 
