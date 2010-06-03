@@ -134,7 +134,7 @@ all_pattern_filenames.each { |element|
   file = file.split(/\n\n/)
 
   # get pattern name
-  @pattern_name = file.first
+  @pattern_name = file.first.downcase
 
   # remove pattern name from array
   file.delete(file.first)
