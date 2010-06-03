@@ -4,7 +4,7 @@ require 'lab'
 # Database migration
 # ----------------------------------------------------------------------
 
-puts "Migrate the database.."
+puts "Migrating the database.."
 
 DataMapper.auto_migrate!
 
@@ -199,9 +199,23 @@ all_pattern_filenames.each { |element|
     if @new_movement.save;
       # object saved
     else
+      puts
+      puts "---------------------------------------------------------"
+      puts "Pattern:       #{@new_movement.pattern.name}"
+      puts
+      puts "Movement"
+      puts "  number:      #{@new_movement.number}"
+      puts "  terminology: #{@new_movement.terminology}"
+      puts "  description: #{@new_movement.description}"
+      puts
+      puts "Error message(s):"
+      puts
+
       @new_movement.errors.each do |e|
         puts e
       end
+      puts "---------------------------------------------------------"
+      puts
     end
   }
 
