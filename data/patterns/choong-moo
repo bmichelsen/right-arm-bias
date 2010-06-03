@@ -77,17 +77,21 @@ Execute a middle back piercing kick to F with the left foot. Perform 14 and 15 i
 
 16.
 Niunja so palmok kaunde daebi makgi
+l_stance, left_stance, middle_technique, right_technique, block, guarding_block, forearm, outer_forearm, normal_motion
 Lower the left foot to F forming a left L-stance toward E while executing a middle guarding block to E with the forearm.
-17. Kaunde dollyo chagi
-    left_technique, middle_technique, kick, turning_kick, normal_motion
-   
-   Execute a middle turning kick to DE with the left foot.
-18. Gojung so digutja makgi
-fixed_stance, right_stance, high_technique, middle_technique, left_technique, right_technique, block, u_shape
-    Lower the left foot to the right foot and then move the right foot to C forming a right fixed stance toward C while executing a U-shape block toward C.
 
-19
-. Niunja so sonkal kaunde daebi makgi
+17.
+Kaunde dollyo chagi
+left_technique, middle_technique, kick, turning_kick, normal_motion
+Execute a middle turning kick to DE with the left foot.
+
+18.
+Gojung so digutja makgi
+fixed_stance, right_stance, high_technique, middle_technique, left_technique, right_technique, block, u_shape
+Lower the left foot to the right foot and then move the right foot to C forming a right fixed stance toward C while executing a U-shape block toward C.
+
+19.
+Niunja so sonkal kaunde daebi makgi
 l_stance, left_stance, middle_technique, right_technique, block, guarding_block, knife_hand, normal_motion
 Jump and spin around counter-clockwise, landing on the same spot to form a left L-stance toward C while executing a middle guarding block to C with a knife hand.
 
