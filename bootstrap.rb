@@ -177,20 +177,28 @@ all_pattern_filenames.each { |element|
     # insert terminology into the database
     @new_movement.terminology = terminology;
 
-    # create an array of tags
-    tags = e[2].split;
+    # remove all the commas from the string with
+    # tags in a temporary variable, because if we
+    # use the same variable name here, and with the
+    # split method (to create an array) below, we
+    # somehow end up with a comma behind each word
+    #
+    # this gives us a problem when we try to look up
+    # the tag from the database since we use explicit
+    # search terms ('block,' is not 'block').
+    t = e[2].gsub(',', '')
 
-    # remove extra white space form array elements
-    tags = tags.delete(" ")
+    # create an array of tags
+    tags = t.split;
 
     tags.each { |tag|
 
       # look up the tag name in the database
-      @t = Tag.first(:name => "#{tag}");
+      t = Tag.first(:name => "#{tag}");
       
       # associate the tag to the movement
-      @new_movement.tags << @t;
-    }
+      @new_movement.tags << t;
+    };
 
     # get the english description
     description = e[3].to_s;
