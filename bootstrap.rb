@@ -123,8 +123,9 @@ all_pattern_filenames.each { |element|
   if @new_tag.save;
     # object saved
   else
-    @new_tag.errors.each.do |e|
+    @new_tag.errors.each do |e|
       puts e
+    end
   end
 }
 
