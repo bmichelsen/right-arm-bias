@@ -165,6 +165,9 @@ all_pattern_filenames.each { |element|
     # get movement number
     movement_number = e[0].to_s.scan(/\d+/);
 
+    # convert movement number from array to integer
+    movement_number = movement_number.to_s.gsub(/"|\[|\]/, '').to_i
+
     # insert the movement number into the database
     @new_movement.number = movement_number;
 
