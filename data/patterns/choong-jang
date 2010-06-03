@@ -1,0 +1,262 @@
+Choong-Jang
+
+1.
+Annun so an palmok nopunde yobap makgi
+sitting_stance, high_technique, right_technique, side_front, block, forearm, inner_forearm, normal_motion
+Move the right foot to A to form a sitting stance toward D while executing a side front block with the right inner forearm and extending the left forearm side-downward.
+
+2.
+Annun so an palmok nopunde yobap makgi
+sitting_stance, high_technique, left_technique, side_front, block, forearm, inner_forearm, normal_motion
+Execute a side front block with the left inner forearm extending the right forearm side downward while maintaining a sitting stance toward D.
+
+3.
+Moa so kiokja jirugi
+close_stance, middle_technique, left_technique, attack, punch, angle_punch, slow_motion
+Bring the right foot to the left foot forming a closed stance toward D while executing an angle punch with the left fist. Perform in a slow motion.
+
+4.
+Gunnun so doo songarak nopunde bandae tulgi
+walking_stance, left_stance, high_technique, right_technique, attack, thrust, finger, double_finger, normal_motion
+Move the left foot to D to form a left walking stance toward D while executing a high thrust to D with the right double finger.
+
+5.
+Gunnun so doo songarak nopunde bandae tulgi
+walking_stance, right_stance, high_technique, left_technique, attack, thrust, finger, double_finger, normal_motion
+Move the right foot to D to form a right walking stance toward D while executing a high thrust to D with the left double finger.
+
+6.
+Gunnun so dung joomuk ap taerigi
+walking_stance, right_stance, high_technique, attack, strike, front_strike, back_fist, normal_motion
+Execute a front strike to D with the right back fist while maintaining a right walking stance toward D.
+
+7.
+Gunnun so bakat palmok chukyo makgi
+walking_stance, left_stance, high_technique, left_technique, block, forearm, outer_forearm, rising_block, normal_motion
+Move the left foot to D forming a left walking stance toward D while executing a rising block with the left forearm.
+
+8.
+Gunnun so ap joomuk kaunde baro jirugi
+walking_stance, right_stance, middle_technique, right_technique, attack, punch, normal_motion
+Move the right foot to D to form a right walking stance toward D at the same time executing a middle punch to D with the right fist.
+
+9.
+Niunja so palmok kaunde daebi makgi
+l_stance, right_stance, middle_technique, left_technique, block, guarding_block, forearm, outer_forearm, sliding_motion
+Move the right foot to C, turning counter-clockwise and then slide to C to form a right L-stance toward D while executing a middle guarding block to D with the forearm.
+
+10.
+Najunde apcha busigi
+right_technique, low_technique, kick, front_snap_kick, normal_motion
+Execute a low front snap kick to D with the right foot keeping the position of the hands as they were in 9.
+
+11.
+Nachuo so opun sonkut nopunde baro tulgi
+low_stance, right_stance, high_technique, right_technique, attack, thrust, fingertip, flat_fingertip, slow_motion
+Lower the right foot to D forming a right low stance toward D while executing a high thrust to D with the right flat finger tip.
+
+12.
+Nopunde dollyo chagi
+right_technique, high_technique, kick, turning_kick, normal_motion
+Execute a high turning kick to D with the right foot supporting the body with both hands and the left knee.
+
+13.
+Nopunde jirugi
+high_technique, right_technique, attack, punch, normal_motion
+Lower the right foot to D and then execute a high punch to D with the right fist while pressing the ground with the left palm.
+
+14.
+Niunja so yop palkup tulgi
+l_stance, left_stance, middle_technique, left_technique, attack, thrust, elbow, side_elbow, sliding_motion
+Move the left foot to D turning clockwise to form a left L-stance toward C while thrusting to D with the left side elbow.
+
+15.
+Niunja so palmok kaunde daebi makgi
+l_stance, left_stance, middle_technique, right_technique, block, guarding_block, forearm, outer_forearm, normal_motion
+Move the left foot to C turning clockwise to form a left L-stance toward D at the same time executing a middle guarding block to D with the forearm.
+
+16.
+Niunja so sonbadak bandae duro makgi
+l_stance, right_stance, middle_technique, left_technique, block, scooping_block, palm, normal_motion
+Move the right foot to C forming a right L-stance toward D while executing a scooping block to D with the left palm.
+
+17.
+Niunja so sonkal kaunde yop taerigi
+l_stance, left_stance, middle_technique, right_technique, attack, strike, side_strike, knife_hand, normal_motion
+Move the left foot to C forming a left L-stance toward D while executing a middle outward strike to D with the right knife-hand.
+
+18.
+Gunnun so kyocha joomuk noollo makgi
+walking_stance, left_stance, low_technique, left_technique, right_technique, block, pressing_block, x_fist, normal_motion
+Execute a pressing block with an X-fist while forming a left walking stance toward C pivoting with the right foot.
+
+19.
+Moorup najunde apcha busigi
+right_technique, low_technique, kick, front_snap_kick, knee, normal_motion
+Execute a low front snap kick to C with the right knee while pulling both hands in the opposite direction as if grabbing the opponent's leg.
+
+20.
+Niunja so sonkal kaunde daebi makgi
+l_stance, right_stance, middle_technique, left_technique, block, knife_hand, guarding_block, normal_motion
+Lower the right foot to C forming a right L-stance toward D while executing a middle guarding block to D with a knife-hand.
+
+21.
+Niunja so yop palkup tulgi
+l_stance, right_stance, middle_technique, right_technique, attack, thrust, elbow, side_elbow, sliding_motion
+Move the right foot to D in a sliding motion to form a right L-stance toward C while thrusting to D with the right side elbow.
+
+22.
+Niunja so sonkal kaunde daebi makgi
+l_stance, left_stance, middle_technique, right_technique, block, guarding_block, knife_hand, normal_motion
+Execute a middle guarding block to D with a knife-hand while forming a left L-stance toward D pivoting with the left foot.
+
+23.
+Kaunde yopcha jirugi
+right_technique, middle_technique, kick, side_piercing_kick, normal_motion
+Execute a middle side piercing kick to D with the right foot while pulling both hands in the opposite direction.
+
+24.
+Dwitbal so sang sonbadak noollo makgi
+rear_foot_stance, left_stance, middle_technique, right_technique, left_technique, block, pressing_block, palm, normal_motion
+Lower the right foot to D and then execute a pressing block with a twin palm while forming a right rear foot stance toward C, pivoting with the right foot.
+
+25.
+Gunnun so bakat palmok nopunde baro ap makgi, Gunnun so dung joomuk nopunde yop taerigi
+walking_stance, right_stance, high_technique, right_technique, block, forearm, outer_forearm, attack, strike, side_strike, back_fist, normal_motion, more_than_one_technique
+Move the right foot to C to form a right walking stance toward C while executing a high front block to C with the right outer forearm, and then a high side strike to C with the right back fist, maintaining a right walking stance toward C.
+
+26.
+Niunja so opun sonkut nopunde bandae tulgi
+l_stance, right_stance, high_technique, left_technique, attack, thrust, fingertip, flat_fingertip, normal_motion
+Execute a high thrust to D with the left flat finger tip while forming a right L-stance toward D pivoting with the right foot.
+
+27.
+Najunde apcha busigi
+right_technique, low_technique, kick, front_snap_kick, normal_motion
+Execute a low front snap kick to D with the right foot while bring the right palm on the left back hand.
+
+28.
+Gunnun so dwit palkup bandae tulgi
+walking_stance, left_stance, middle_technique, right_technique, attack, thrust, back_elbow, slow_motion
+Lower the right foot to D to form a left walking stance toward C pivoting with the left foot while thrusting to D with the right back elbow, placing the left side fist on the right fist. Perform in a slow motion.
+
+29.
+Niunja so sondung bandae naeryo taerigi
+l_stance, right_stance, middle_technique, left_technique, attack, strike, downward_strike, back_hand, stamping_motion
+Execute a downward strike with the left back hand while forming a right L-stance toward C, pivoting with the right foot. Perform in a stamping motion.
+
+30.
+Niunja so ap joomuk kaunde baro jirugi
+l_stance, right_stance, middle_technique, right_technique, attack, punch, normal_motion
+Punch the left palm with the right fist while maintaining a right L-stance toward C.
+
+31.
+Niunja so sondung bandae naeryo taerigi
+l_stance, left_stance, middle_technique, right_technique, attack, strike, downward_strike, back_hand, stamping_motion
+Move the right foot to C in a stamping motion to form a left L-stance toward C while executing a downward strike with the right back hand. Perform in a stamping motion.
+
+32.
+Niunja so ap joomuk kaunde baro jirugi
+l_stance, left_stance, middle_technique, left_technique, attack, punch, normal_motion
+Punch the right palm with the left fist while maintaining a left L-stance toward C.
+
+33.
+Niunja so sonkal kaunde yop taerigi
+l_stance, right_stance, middle_technique, left_technique, attack, strike, side_strike, knife_hand, stamping_motion
+Execute a middle outward strike to D with the left knife-hand while forming a right L-stance toward D, pivoting with the right foot. Perform in a stamping motion.
+
+34.
+Gunnun so dung joomuk nopunde bandae yobap taerigi
+walking_stance, left_stance, high_technique, right_technique, attack, strike, front_strike, back_fist, normal_motion
+Execute a high side front strike to D with the right back fist striking the left palm with the right elbow while forming a left walking stance toward D, slipping the left foot.
+
+35.
+Niunja so sonkal kaunde yop taerigi
+l_stance, left_stance, middle_technique, right_technique, attack, strike, side_strike, knife_hand, normal_motion
+Move the right foot to D forming a left L-stance toward D while executing a middle outward strike to D with the right knife-hand. Perform in a stamping motion.
+
+36.
+Gunnun so dung joomuk nopunde bandae yobap taerigi
+walking_stance, right_stance, high_technique, left_technique, attack, strike, front_strike, back_fist, normal_motion
+Execute a high side front strike to D with the left back fist striking the right palm with the left elbow while forming a right walking stance toward D, slipping the right foot.
+
+37.
+Niunja so sonkal dung najunde daebi makgi
+l_stance, right_stance, low_technique, left_technique, block, reverse_knife_hand, guarding_block, normal_motion
+Execute a low guarding block to C with a reverse knife-hand while forming a right L-stance toward C pivoting with the right foot.
+
+38.
+Gunnun so bandae gutja makgi
+walking_stance, left_stance, middle_technique, right_technique, left_technique, block, 9_shape_block, normal_motion
+Execute a right 9-shape block while forming a left walking stance toward C slipping the left foot.
+
+39.
+Niunja so sonkal dung najunde daebi makgi
+l_stance, left_stance, low_technique, right_technique, block, reverse_knife_hand, guarding_block, normal_motion
+Move the right foot to C forming a left L-stance toward C while executing a low guarding block to C with a reverse knife-hand.
+
+40.
+Gunnun so bandae gutja makgi
+walking_stance, right_stance, middle_technique, right_technique, left_technique, block, 9_shape_block, normal_motion
+Execute a left 9-shape block while forming a right walking stance toward C slipping the right foot.
+
+41.
+Gunnun so sang sonkal soopyong taerigi
+walking_stance, left_stance, left_technique, right_technique, attack, strike, horizontal_strike, knife_hand, twin_knife_hand, normal_motion
+Move the right foot to D forming a left walking stance toward C while executing a horizontal strike with a twin knife-hand.
+
+42.
+Gunnun so bandal son nopunde bandae taerigi
+walking_stance, left_stance, right_technique, attack, strike, front_strike, arc_hand, normal_motion
+a high strike to C with the right arc-hand while maintaining a left walking stance toward C.
+
+43.
+Kaunde apcha busigi
+right_technique, middle_technique, kick, front_snap_kick, normal_motion
+Execute a middle front snap kick to C with the right foot keeping the position of the hands as they were in 42.
+
+44.
+Gunnun so bandal son nopunde bandae taerigi
+walking_stance, right_stance, left_technique, attack, strike, front_strike, arc_hand, normal_motion
+Lower the right foot to C forming a right walking stance toward C while executing a high strike to C with the left arc-hand.
+
+45.
+Kaunde apcha busigi
+left_technique, middle_technique, kick, front_snap_kick, normal_motion
+Execute a middle front snap kick to C with the left foot keeping the position of the hands as they were in 44.
+
+46.
+Gunnun so ap joomuk kaunde bandae jirugi
+walking_stance, left_stance, middle_technique, right_technique, attack, punch, fast_motion
+Lower the left foot to C forming a left walking stance toward C while executing a middle punch to C with the right fist.
+
+47.
+Gunnun so ap joomuk kaunde baro jirugi
+walking_stance, left_stance, middle_technique, left_technique, attack, punch, fast_motion
+Execute a middle punch to C with the left fist while maintaining a left walking stance toward C. Perform 46 and 47 in a fast motion.
+
+48.
+Moa so sang inji joomuk nopunde bandal jirugi
+close_stance, high_technique, left_technique, right_technique, attack, punch, crescent_punch, twin_for_knuckle_fist, normal_motion
+Bring the right foot to the left foot to form a close stance toward C while executing a high crescent punch with a twin for-knuckle fist.
+
+49.
+Gunnun so sonkal najunde makgi
+walking_stance, left_stance, low_technique, left_technique, block, knife_hand, normal_motion
+Move the left foot to B turning counter-clockwise to form a left walking stance toward B while executing a low block to B with the left knife-hand.
+
+50.
+Gunnun so pyonjoomuk nopunde bandae jirugi
+walking_stance, left_stance, high_technique, right_technique, attack, punch, open_fist, normal_motion
+Execute a high punch to B with the right open fist while maintaining a left walking stance toward B.
+
+51.
+Gunnun so sonkal najunde makgi
+walking_stance, right_stance, low_technique, right_technique, block, knife_hand, normal_motion
+Move the left foot on line AB forming a right walking stance toward A while executing a low block to A with the right Knife-hand.
+
+52.
+Gunnun so pyonjoomuk nopunde bandae jirugi
+walking_stance, right_stance, high_technique, left_technique, attack, punch, open_fist, normal_motion
+Execute a high punch to A with the left open fist while maintaining a right walking stance toward A.
+
