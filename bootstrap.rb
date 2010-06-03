@@ -180,6 +180,9 @@ all_pattern_filenames.each { |element|
     # create an array of tags
     tags = e[2].split;
 
+    # remove extra white space form array elements
+    tags = tags.delete(" ")
+
     tags.each { |tag|
 
       # look up the tag name in the database
