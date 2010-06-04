@@ -14,7 +14,7 @@ puts "Done."
 # Console output
 # ----------------------------------------------------------------------
 
-puts "Inserting data into the database.."
+puts "Inserting data.."
 
 # ----------------------------------------------------------------------
 # Pattern names
@@ -229,5 +229,40 @@ all_pattern_filenames.each { |element|
       puts
     end
   }
-
 }
+
+# ----------------------------------------------------------------------
+# Movements
+# ----------------------------------------------------------------------
+
+@patterns = {
+              'chon-ji'      =>     19,
+              'dan-gun'      =>     21,
+              'do-san'       =>     24,
+              'won-hyo'      =>     28,
+              'yul-gok'      =>     38,
+              'joong-gun'    =>     32,
+              'toi-gae'      =>     37,
+              'hwa-rang'     =>     29,
+              'choong-moo'   =>     30,
+              'kwang-gae'    =>     39,
+              'po-eun'       =>     36,
+              'ge-baek'      =>     44,
+              'eui-am'       =>     45,
+              'choong-jang'  =>     52,
+              'juche'        =>     45
+            }
+
+pattern_names.each { |pattern|
+  p = Pattern.first(:name => "#{pattern}");
+
+  # if the @patterns value (k,v) does not match
+  # the inserted number of movements in the database,
+  # then let the user know that these numbers are not
+  # identical
+
+  unless @patterns[p.name] == p.movements.count
+    puts "#{p.name}: #{p.movements.count} (#{@patterns[p.name]})"
+  end
+}
+
