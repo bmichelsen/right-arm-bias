@@ -8,7 +8,7 @@ Move the left foot to B, forming a left walking stance toward B while executing 
 2.
 Gunnun so ap joomuk kaunde bandae jirugi
 walking_stance, left_stance, middle_technique, right_technique, attack, punch, normal_motion
-Execute a middle punch to B with the right fist while maintaining a left walking stance toward B.
+Execute a middle punch to B with the right fist while maintaining a left walking stance toward B
 
 3.
 Gunnun so bakat palmok nopunde baro yop makgi
@@ -48,7 +48,7 @@ Move the left foot to E, turning counter-clockwise to form a left walking stance
 10.
 Gunnun so ap joomuk kaunde bandae jirugi
 walking_stance, left_stance, middle_technique, right_technique, attack, punch, normal_motion
-Execute a middle punch to E with the right first while maintaining a left walking stance toward E
+Execute a middle punch to E with the right fist while maintaining a left walking stance toward E
 
 11.
 Gunnun so bakat palmok nopunde baro yop makgi
@@ -96,7 +96,7 @@ walking_stance, left_stance, middle_technique, left_technique, attack, punch, fa
 Lower the left foot to CF, forming a left walking stance toward CF while executing a middle punch to CF with the left fist
 
 20.
-Gunnun so ap joomuk kaunde bandae jirugi Perform 19 and 20 in a fast motion.
+Gunnun so ap joomuk kaunde bandae jirugi
 walking_stance, left_stance, middle_technique, right_technique, attack, punch, fast_motion
 Execute a middle punch to CF with the right fist while maintaining a left walking stance toward CF
 
