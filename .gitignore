@@ -1,2 +1,6 @@
-*.swp
+*.aux
+*.dvi
+*.log
+*.pdf
 *.sqlite3
+*.swp

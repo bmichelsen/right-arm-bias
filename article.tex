@@ -1,0 +1,234 @@
+% Make two column format for LaTex 2e
+\documentclass[10pt,twocolumn,a4paper]{article}
+
+% Use the following packages
+\usepackage{dcolumn}            % Align table columns on decimal point
+\usepackage{graphicx}           % Include graphics
+\usepackage{listings}           % Pretty source code listings
+\usepackage{url}                % Handle URLs better
+
+% Set dimensions of columns, gap between columns, and paragraph indent
+\setlength{\textheight}{8.875in}
+\setlength{\textwidth}{6.875in}
+\setlength{\columnsep}{0.3125in}
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\parindent}{1pc}
+\setlength{\oddsidemargin}{-.1875in}  % Centers text
+\setlength{\evensidemargin}{-.1875in}
+
+% Add the period after section numbers, and adjust spacing
+\newcommand{\Section}[1]{\vspace{-8pt}\section{\hskip -1em.~~#1}\vspace{-3pt}}
+\newcommand{\SubSection}[1]{\vspace{-3pt}\subsection{\hskip -1em.~~#1}
+\vspace{-3pt}}
+
+\begin{document}
+
+% Make title bold
+\title{\bf The Left Arm Bias in ITF Taekwon-Do Patterns \\ Chon-Ji to Juche}
+
+% Single author
+\author{Bjorn Michelsen, III. Dan \\
+  \texttt{<bjorn@bmichelsen.no>} \\
+  \\
+  ITF Tromsdalen School of Taekwon-Do \\
+  Tromso, Norway
+  }
+
+% Print date
+\date{\today}
+
+% Produce the title
+\maketitle
+
+
+\section*{\centering Abstract}
+\begin{em}
+  Patterns in ITF Taekwon-Do are defined as a choreographed sequence of
+  fundamental movements, which represents an attack or defense towards a
+  particular target area or definite action of an attacker, against one or
+  several imaginary opponents.
+
+  These patterns are said to be using every available attacking and
+  blocking tool from different directions\cite{cyclo:vol1}. It has,
+  however, recently been observered that a right leg bias exist\cite{rlb}.
+
+  A study of arm techniques in patterns Chon-Ji to Juche, initiated in the
+  hope of uncovering whether or not there is a bias to either arm, is
+  reported here.
+\end{em}
+
+% Approach, Results, Conclusion.
+
+
+
+% Introduction
+%   - Problem Statement
+% Method
+%   - Approach
+% Results
+%   - Tables
+%   - Graphs
+% Conclusions
+
+
+%Problem definition
+%Is there a bias towards the right or the left arm in ITF Taekwon-Do
+%patterns Chon-Ji to Juche?
+
+
+\Section{Introduction}
+
+% mer utdypende fra 'abstract', ta med ting fra Right Leg Bias om
+% nødvendig osv. sette dette under Previous Work?
+
+Overall, there are a total of 152 kicks. 85 kicks are with the right
+leg, and 67 kicks are with the left leg. This means that 56\% of all
+kicks in patterns are with the right leg, whereas 44\% are with the left
+leg.
+
+% note that Gibb's article includes *all* the patterns
+
+
+\SubSection{Previous Work}
+
+There are various bibliographic and citation schemes available in
+LaTex, but we choose to use the simplest one in this example.
+
+\Section{Method}
+
+How did you go about solving or making progress on the problem? Did you
+use simulation, analytic models, prototype construction, or analysis of
+field data for an actual product? What was the extent of your work (did
+you look at one application program or a hundred programs in twenty
+different programming languages?) What important variables did you
+control, ignore, or measure?
+
+
+\Section{Results}
+
+What's the answer? Specifically, most good computer architecture papers
+conclude that something is so many percent faster, cheaper, smaller, or
+otherwise better than something else. Put the result there, in numbers.
+Avoid vague, hand-waving results such as ``very'', ``small'', or
+``significant.''
+
+If you must be vague, you are only given license to do so when you can
+talk about orders-of-magnitude improvement. There is a tension here in
+that you should not provide numbers that can be easily misinterpreted,
+but on the other hand you don't have room for all the caveats.
+
+\Section{Conclusions}
+
+What are the implications of your answer? Is it going to change the
+world (unlikely), be a significant ``win'', be a nice hack, or simply
+serve as a road sign indicating that this path is a waste of time (all
+of the previous results are useful). Are your results general,
+potentially generalizable, or specific to a particular case?
+
+
+% Unnumbered section (note the asteriks)
+\section*{Acknowledgments}
+
+Thank you, thank you, thank you!
+
+
+
+
+\begin{table}
+  \centering
+  \begin{tabular}{l|c|c} \hline \hline
+    & Left Arm & Right Arm \\ \hline
+
+    Blocks    & 148   & 133 \\
+    Punches   &  60   &  71 \\
+    Strikes   &  34   &  38 \\
+    Thrusts   &  21   &  14 \\
+    \hline
+
+    \textbf{Total}   & \textbf{263}   & \textbf{256} \\
+    \hline
+  \end{tabular}
+  \caption{Total number of techniques per arm by category.}
+  %\label{tab:table1}
+  \end{table}
+
+
+\begin{table}
+  \centering
+  \begin{tabular}{l|c|c|c} \hline \hline
+    & High & Middle & Low \\ \hline
+
+    Blocks    & x   & y   & z \\
+    Punches   & x   & y   & z \\
+    Strikes   & x   & y   & z \\
+    Thrusts   & x   & y   & z \\
+    \hline
+
+  \end{tabular}
+  \caption{Total number of techniques by height.}
+  %\label{tab:table1}
+  \end{table}
+
+
+\begin{table}
+  \centering
+  \begin{tabular}{l|c|c|c} \hline \hline
+    & High & Middle & Low \\ \hline
+
+    Blocks    & x   & y   & z \\
+    Punches   & x   & y   & z \\
+    Strikes   & x   & y   & z \\
+    Thrusts   & x   & y   & z \\
+    \hline
+
+  \end{tabular}
+  \caption{Total number of techniques by height and arm.}
+  %\label{tab:table1}
+  \end{table}
+
+
+% percent more useful than numbers?
+
+
+
+
+
+% References
+\begin{thebibliography}{99}
+    \small  % Use 9 point text
+
+    \bibitem{cyclo:vol1}
+      General Choi Hong Hi,
+      {\emph Encyclopedia of Taekwon-Do}, Vol. 1, p. 13,
+      International Taekwon-Do Federation, 1983.
+
+    \bibitem{rlb}
+      M. Gibb,
+      {\emph Right Leg Bias in Patterns}, 2009.
+      \url{http://visiontkd.co.uk/assetshome/pdf/Rightlegbias.pdf}
+
+%\bibitem{key:foo}
+%I. M. Author,
+%``Some Related Article I Wrote,''
+%{\em Some Fine Journal}, Vol. 17, pp. 1-100, 1987.
+
+%\bibitem{foo:baz}
+%A. N. Expert,
+%{\em A Book He Wrote,}
+%His Publisher, 1989.
+
+
+
+
+
+
+
+
+
+
+
+\end{thebibliography}
+
+\end{document}
