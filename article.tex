@@ -1,33 +1,5 @@
-% Introduction
-%   Definitions
-%     Patterns
-%     Fundamental movements
-%  Related work
-%  Problem statement
-%     Groups of techniques
-%       blocks
-%       strikes
-%       thrusts
-%       punches
-%     Tagging
-
-
-
-
-
-
-
-
-  
 % Method
-%   Approach
-%   Collecting data
-%   Analysis of data
-%   Tagging
-%     Group of tags || Kind of Tags
-%       height
-%       weapon
-%       type etc.
+%   Analysis of data || Processing
 %    Difficulties related to tagging
 %  Uncertainty
 %
@@ -37,8 +9,6 @@
 % Conclusion
 
 
-%Related work
-%  Right Leg Bias
 
 
 
@@ -122,98 +92,264 @@
 
   A \emph{pattern} in International Taekwon-Do Federation (ITF) is defined as
   a choreographed sequence of fundamental movements. These \emph{fundamental
-  movements} are basic elements which represent an attack or defense towards a
+  movements} are basic elements which represent an attack or defense against a
   specific target area, or a predetermined action of an attacker.
 
   Combined in a pattern, it allows the student to systematically deal with one
   or several imaginary opponents under various assumptions, using every
-  available attacking and blocking tool from different
-  directions\cite{cyclo:vol1}. In addition, the techniques should also be
-  evenly distributed between the left and the right side\cite{cyclo:vol1}.
+  available attacking and blocking tool from different directions.
+  Furthermore, the techniques should also be evenly distributed between the
+  left and the right side\cite{cyclo:vol1}.
 
   It has, however, recently been observed that a bias towards the right leg
-  exist\cite{rlb}. % ALL patterns..
+  exist. The study by Gibbs\cite{rlb} show that there is a total of 152 kicks
+  in patterns Chon-Ji to Tong-Il. 85 kicks are with the right leg, and 67
+  kicks are with the left leg. This means that 56\% of the kicks are with the
+  right leg, and 44\% with the left leg.
 
-% how is related work written about?
+  The work by Gibbs focused on kicks in all patterns, whereas this article
+  examines patterns Chon-Ji to Juche. Looking at kicks in said patterns using
+  Gibbs' paper, we find that there are 72 kicks in total. 42 kicks are with
+  the right leg, and 30 kicks are with the left leg. Roughly 58\% of the kicks
+  are with the right leg, and about 42\% with the left. Thus, the right leg
+  bias still holds.
 
-
-% recent studies of a right leg bias; Recent work has found that..
-%
-% in this paper, therefore, we analyze..
-
-%It has, however, recently been observed that a right leg bias
-%exist\cite{rlb} when looking at all the 24 Taekwon-Do patterns.
-
-% Is there a bias towards the *right* leg in Chon-Ji to Juche?
-
-%A study of arm techniques in patterns Chon-Ji to Juche, initiated in the hope
-%of uncovering whether or not there is a bias to either arm, is reported here.
+  In this article, therefore, we analyze hand techniques in patterns Chon-Ji
+  to Juche using tags and report our findings of a left arm bias.
 
 
+\SubSection{Tags and Tagging}
 
-% Problem Statement
-%
-% pp. 154-155
-%
-% The following points should be considered while performing patterns:
-%
-%   9. Attack and defense techniques should be equally
-%      distributed among right and left hands and feet
-%
-%
-%
-% and the recent discovery of the right leg bias,
-%
-% Is there a bias towards the right or the left arm in ITF Taekwon-Do
-% patterns Chon-Ji to Juche?
-%
-% note that Gibb's article includes *all* the patterns
+%   Applying tags (to dataset)
+%   Tagging
+%     Group of tags
+%     Groups of techniques {blocks, strikes, thrusts, punches}
+%       height
+%       weapon
+%       type etc.
+
+  In a hierarchical and exclusive classification system, each object belong in
+  one unambiguous category, which in turn is within another more general one.
+  Take the hierarchy of folders in a computer file system, for example. If we
+  want to organize articles on birds native to Africa in a directory, we have
+  several options:
+  
+  \begin{lstlisting}
+    1. ~/articles/birds
+    2. ~/articles/africa
+    3. ~/articles/africa/birds
+    4. ~/articles/birds/africa
+  \end{lstlisting}
+
+  all articles on birds
+  all articles on africa
+  all articles on african birds
+  all articles on birds from africa
 
 
-%Overall, there are a total of 152 kicks. 85 kicks are with the right
-%leg, and 67 kicks are with the left leg. This means that 56\% of all
-%kicks in patterns are with the right leg, whereas 44\% are with the left
-%leg.
+  How we choose to organize the folders reflects a decision concerning the
+  relative importance of each characteristic\cite{golder:ct}. Folder names and
+  levels are in themselves informative, in that, like tags, they describe the
+  information held within them\cite{jones:folders}.
+
+
+
+
+% go through different folder setup
+% then insert the text about ``Tags, on the other hand..''
+% elaborate what it means that an object can have many tags
+% show a venn diagram
+% explain the venn diagram
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Tags, on the other hand, are \emph{non-hierarchical} and \emph{inclusive},
+  which is to say that an object can be associated with a great variety of
+  tags simultaneously\cite{golder:ct}.
+
+
+
+
+
+
+
+
+
+
+
+  % Finally we can define tags as being non-hierarchical..
+  \emph{Tags} are non-hierarchical descriptive terms, keywords or labels that
+  is attached to an object for later
+  retrieval\cite{golder:ct}\cite{huang:tt}\cite{shirky:ontology}\cite{wikipedia:tags}.
+
+
+
+
+
+
+
+
+  %(mention polyhierarchical from the IA book)
+
+
+  %Descriptive terms, keywords or labels are metadata associated with a given
+  %object used to describe a concept or type of information\cite{heymann:ccch}.
+
+  %Object.. (define an object, then say that in this article an object is a
+  %pattern movement || a movement in a pattern)
+  
+
+  %Later retrieval..
+
+% what does this all mean?
+%   non-hierarchical
+%   descriptive terms, keywords or labels
+%   object (a movement in a pattern)
+
+% Why do we tag?
+%   this kind of metadata helps describe an item
+%   allows it to be found again by searching
+%   future navigation, filtering or search
+%   later retrieval
+%   categorize content using keywords
+%   grouping related objects
+%   classifies
+%   organize
+%   for the purpose of classification and retrieval
+% How do we tag (tagging)?
+%   define tagging
+
+
+
+
+%\emph{Tagging} can be defined as the practice of creating and managing labels
+%that categorize content using simple keywords
+
+
+Tagging is the act of organizing a collection of entities, whether things or
+concepts, into related groups\cite{shirky:ontology}.
+
+
+
+
+
+
+
+
+
+
+
 
 
 \Section{Method}
+  Write introduction.
 
-How did you go about solving or making progress on the problem? Did you
-use simulation, analytic models, prototype construction, or analysis of
-field data for an actual product? What was the extent of your work (did
-you look at one application program or a hundred programs in twenty
-different programming languages?) What important variables did you
-control, ignore, or measure?
+% Three parts
+%   1. terminology (sonkal.taekwondo.cz)
+%   2. english description (condensed encyclopedia)
+%   3. tagging (how is tagging used? what is its role?)
 
-% Tagging can be defined as the practice of creating and
-% managing labels that categorize content using simple
-% keywords.
+
+
+\SubSection{The Data}
+
+  Our data comes from two different sources. The terminology associated with
+  movements are from Taekwon-Do ITF Sonkal
+  Praha\footnote{\url{http://sonkal.taekwondo.cz}}, and the English
+  description of each movement is from the condensed
+  encyclopedia\cite{cyclo:con}.
+
+
+\SubSection{Approach}
+% collecting data
+
+  Todo.
+
+
+% registered terminology to all pattern movements, grouped by pattern names, including their pattern movement number, and motion type (normal, slow, etc.), link to movements_all.txt ?
+%   reviewed the terminology and movement type with odd-magne using a wiki
+%   made a few changes (corrected terminology for punch for instance)
+% added english description from the condensed encyclopedia to pattern
+%   checked that the terminology corresponded to the actual pattern movement
+% added tags
+%   (documented the tagging process)
+%   give an overview over (groups of) tags, see movements_with_tags.txt
+% divided each pattern into its own text file
+% modelled the project in the database (./models)
+%   explain all attributes etc.
+% made a ruby script to parse the text files (link to bootstrap.rb ?)
+%   adding the contents into a database using datamapper (orm) (link to datamapper) || populated the database using Datamapper (orm)
+%   saving the data into an sqlite3 database for analysis
+%
+% show an example (chon-ji movement no. 1, for instance)
+%
+%
+%
+% The terminology to all pattern movements where first inserted into a text
+% file, along with.. || including..
+%
+
+
+
+% hva forholder jeg meg til ved utvetydigheter (15-binds vs. *kondenserte*)
+% vurderinger på teknikker
+% hvorfor er tekniker gruppert slik de er?
+
+
+
+
+
+
+
+
+
+
 
 \Section{Results}
 
-What's the answer? Specifically, most good computer architecture papers
-conclude that something is so many percent faster, cheaper, smaller, or
-otherwise better than something else. Put the result there, in numbers.
-Avoid vague, hand-waving results such as ``very'', ``small'', or
-``significant.''
+%What's the answer? Specifically, most good computer architecture papers
+%conclude that something is so many percent faster, cheaper, smaller, or
+%otherwise better than something else. Put the result there, in numbers.
+%Avoid vague, hand-waving results such as ``very'', ``small'', or
+%``significant.''
 
-If you must be vague, you are only given license to do so when you can
-talk about orders-of-magnitude improvement. There is a tension here in
-that you should not provide numbers that can be easily misinterpreted,
-but on the other hand you don't have room for all the caveats.
+%If you must be vague, you are only given license to do so when you can
+%talk about orders-of-magnitude improvement. There is a tension here in
+%that you should not provide numbers that can be easily misinterpreted,
+%but on the other hand you don't have room for all the caveats.
+
+% Observation: Kicks happen between stances
 
 \Section{Conclusions}
 
-What are the implications of your answer? Is it going to change the
-world (unlikely), be a significant ``win'', be a nice hack, or simply
-serve as a road sign indicating that this path is a waste of time (all
-of the previous results are useful). Are your results general,
-potentially generalizable, or specific to a particular case?
+%What are the implications of your answer? Is it going to change the
+%world (unlikely), be a significant ``win'', be a nice hack, or simply
+%serve as a road sign indicating that this path is a waste of time (all
+%of the previous results are useful). Are your results general,
+%potentially generalizable, or specific to a particular case?
 
 
 % Unnumbered section (note the '*')
 \section*{Acknowledgments}
 
+  % Thanks to Master Nicolaisen for pointing out that I allredy had found a
+  % problem statement when I was still looking for one
+  %
   % Odd-Magne Hansen for helping me with the terminology, and general feedback
   Todo.
 
@@ -288,10 +424,47 @@ potentially generalizable, or specific to a particular case?
       \emph{Encyclopedia of Taekwon-Do}, Vol. 1,
       International Taekwon-Do Federation, 1993.
 
+    \bibitem{cyclo:con}
+      Gen. Choi Hong Hi,
+      \emph{Taekwon-Do (the Korean Art of Self-Defence)}, Fifth Edition,
+      International Taekwon-Do Federation, 1999.
+
     \bibitem{rlb}
       M. Gibb,
       \emph{Right Leg Bias in Patterns}, 2009.
       \url{http://visiontkd.co.uk/assetshome/pdf/Rightlegbias.pdf}
+
+    \bibitem{golder:ct}
+      Scott A. Golder, Bernardo A. Huberman,
+      \emph{The Structure of Collaborative Tagging Systems}, 2005.
+      \url{http://www.hpl.hp.com/research/scl/papers/tags/tags.pdf}
+
+    \bibitem{heymann:ccch}
+      Paul Heymann, Hector Garcia-Molina,
+      \emph{Collaborative Creation of Communal Hierarchical Taxonomies in
+      Social Tagging Systems}, 2006.
+      \url{http://ilpubs.stanford.edu:8090/775/1/2006-10.pdf}
+
+    \bibitem{huang:tt}
+      Jeff Huang, Katherine M. Thornton, Efthimis N. Efthimiadis,
+      ``Conversational Tagging in Twitter,''
+      \emph{Hypertext}, pp. 173-177, 2010.
+
+    \bibitem{jones:folders}
+      William Jones, Ammy J. Phuwanartnurak, Rajdeep Gill, Harry Bruce,
+      \emph{Don't Take My Folders Away! Organizing Personal Information to Get
+      Things Done}, 2005.
+      \url{https://dlib.lib.washington.edu/dspace/bitstream/handle/1773/2031/
+           Don%27t%20take%20my%20folders%20away%2c%20current.pdf?sequence=2}
+
+    \bibitem{shirky:ontology}
+      Clay Shirky,
+      \emph{Ontology is Overrated: Categories, Links, and Tags}, 2005.
+      \url{http://www.shirky.com/writings/ontology_overrated.html}
+
+    \bibitem{wikipedia:tags}
+      \emph{Tag (metadata)}, July 12, 2010. \\
+      \url{http://en.wikipedia.org/wiki/Tag}
 
 \end{thebibliography}
 
