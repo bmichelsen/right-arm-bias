@@ -93,9 +93,6 @@ texpreamble("\def\V#1{\bm{#1}}");
     %* The results/findings of the research; and
     %* The main conclusions and recommendations
 
-  % see the article: The Structure of Collaborative Tagging Systems
-  % located in ~/tmp/tags.pdf
-
   Todo.
 \end{em}
 
@@ -133,15 +130,7 @@ texpreamble("\def\V#1{\bm{#1}}");
   to Juche using tags and report our findings of a left arm bias.
 
 
-\SubSection{Tags and Tagging}
-
-%   Applying tags (to dataset)
-%   Tagging
-%     Group of tags
-%     Groups of techniques {blocks, strikes, thrusts, punches}
-%       height
-%       weapon
-%       type etc.
+\SubSection{Tags}
 
   In a hierarchical and exclusive classification system, each object belong in
   one unambiguous category, which in turn is within another more general one.
@@ -156,30 +145,67 @@ texpreamble("\def\V#1{\bm{#1}}");
     4. ~/articles/birds/africa
   \end{lstlisting}
 
-  all articles on birds
-  all articles on africa
-  all articles on african birds
-  all articles on birds from africa
-
-
   How we choose to organize the folders reflects a decision concerning the
   relative importance of each characteristic\cite{golder:ct}. Folder names and
   levels are in themselves informative, in that, like tags, they describe the
   information held within them\cite{jones:folders}.
 
+  The directory structure of (1), and (2) make central the fact that the
+  folders are about ``birds'' and ``africa''. But, they don't tell anything
+  about the other category. In (3) and (4) the files are organized by both
+  categories, and show that there is a parent-child or sibling relationships
+  between the folder names\cite{mathes:folk}.
+
+  \emph{Tags}, on the other hand, are non-hierarchical descriptive terms,
+  keywords or labels that is attached to an object for later retrieval
+  \cite{golder:ct}\cite{huang:tt}\cite{shirky:ontology}\cite{wikipedia:tags}.
+
+  They are \emph{non-hierarchical} and \emph{inclusive}, which is to say that
+  an object can be associated with a great variety of tags
+  simultaneously\cite{golder:ct}. The \emph{descriptive terms},
+  \emph{keywords} or \emph{labels} are metadata connected to a given object
+  which describe a concept or type of information\cite{heymann:ccch}.
+
+
+\SubSection{Tagging}
+
+  Tagging is the act of organizing a collection of objects into related
+  groups\cite{shirky:ontology}.
 
 
 
-% go through different folder setup
-% then insert the text about ``Tags, on the other hand..''
-% elaborate what it means that an object can have many tags
-% show a venn diagram
-% explain the venn diagram
+
+% Why do we tag?
+%   this kind of metadata helps describe an item
+%   allows it to be found again by searching
+%   future navigation, filtering or search
+%   later retrieval
+%   categorize content using keywords
+%   grouping related objects
+%   classifies
+%   organize
+%   for the purpose of classification and retrieval
+%   display venn diagram
+%   explain venn diagram
+% How do we tag (tagging)?
+%   define tagging
+
+
+% end the section with something like..
+% tags add metadata to an object
+% tagging groups objects
+% the reason for why we bother is because we want to find the objects again
 
 
 
 
+\SubSection{Retrieval}
 
+
+% explain how later retrieval is done by using the venn diagram
+
+
+% Venn diagram
 \def\A{A}
 \def\B{\V{B}}
 
@@ -241,71 +267,6 @@ shipout(bbox(0.25cm));
 
 
 
-  Tags, on the other hand, are \emph{non-hierarchical} and \emph{inclusive},
-  which is to say that an object can be associated with a great variety of
-  tags simultaneously\cite{golder:ct}.
-
-
-
-
-
-
-
-
-
-
-
-  % Finally we can define tags as being non-hierarchical..
-  \emph{Tags} are non-hierarchical descriptive terms, keywords or labels that
-  is attached to an object for later
-  retrieval\cite{golder:ct}\cite{huang:tt}\cite{shirky:ontology}\cite{wikipedia:tags}.
-
-
-
-
-
-
-
-
-  %(mention polyhierarchical from the IA book)
-
-
-  %Descriptive terms, keywords or labels are metadata associated with a given
-  %object used to describe a concept or type of information\cite{heymann:ccch}.
-
-  %Object.. (define an object, then say that in this article an object is a
-  %pattern movement || a movement in a pattern)
-  
-
-  %Later retrieval..
-
-% what does this all mean?
-%   non-hierarchical
-%   descriptive terms, keywords or labels
-%   object (a movement in a pattern)
-
-% Why do we tag?
-%   this kind of metadata helps describe an item
-%   allows it to be found again by searching
-%   future navigation, filtering or search
-%   later retrieval
-%   categorize content using keywords
-%   grouping related objects
-%   classifies
-%   organize
-%   for the purpose of classification and retrieval
-% How do we tag (tagging)?
-%   define tagging
-
-
-
-
-%\emph{Tagging} can be defined as the practice of creating and managing labels
-%that categorize content using simple keywords
-
-
-Tagging is the act of organizing a collection of entities, whether things or
-concepts, into related groups\cite{shirky:ontology}.
 
 
 
@@ -366,6 +327,13 @@ concepts, into related groups\cite{shirky:ontology}.
 % The terminology to all pattern movements where first inserted into a text
 % file, along with.. || including..
 %
+
+%   Tagging
+%     Group of tags
+%     Groups of techniques {blocks, strikes, thrusts, punches}
+%       height
+%       weapon
+%       type etc.
 
 
 
@@ -519,6 +487,12 @@ concepts, into related groups\cite{shirky:ontology}.
       Things Done}, 2005.
       \url{https://dlib.lib.washington.edu/dspace/bitstream/handle/1773/2031/
            Don%27t%20take%20my%20folders%20away%2c%20current.pdf?sequence=2}
+
+    \bibitem{mathes:folk}
+      Adam Mathes,
+      ``Folksonomies -- Cooperative Classification and Communication Through
+      Shared Metadata,''
+      \emph{Computer Mediated Communication, LIS590CMC}, 2004.
 
     \bibitem{shirky:ontology}
       Clay Shirky,
