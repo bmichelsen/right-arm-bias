@@ -174,36 +174,36 @@ texpreamble("\def\V#1{\bm{#1}}");
 
 
 \SubSection{Set theory}
+  A \emph{set} is a collection of distinct objects. It is a plurality thought
+  of as a unit\cite{hausdorff:sets}. \emph{Set theory} is the branch of
+  mathematics that studies sets\cite{wikipedia:tags}.
 
-  The characteristics of tags make them excellent for future navigation,
-  filtering or search. An object which has been tagged contains a collection,
-  or a set, of tags.  Each tag is an element of the set. The order of elements
-  within the set is irrelevant, but each element can only occur once.
+  An object which has been tagged contains a collection, or a set, of tags.
+  Each tag is an element of the set. The order of elements within the set is
+  irrelevant, but each element can only occur once.
 
-  For example, $\{1,5,8\}$ denotes a set with three elements: 1, 5 and 8.
+  For example, $\{1,5,8\}$ is a set with three elements: 1, 5 and 8.
   $\{5,8,1\}$ is the same set, since the order of the elements doesn't matter.
   $\{1,1,1\}$, however, is not a valid set because the element 1 occurs
-  several times. Elements in a set can also contain strings, so $\{loons,
-  penguins, terns\}$ is a valid set.
-  
+  repeatedly. Elements in a set can contain strings as well, so $\{loons,
+  terns, penguins\}$ is also a valid set.
 
-% set operations
+  We usually denote a set by a capital letter for reference purposes. For
+  instance, $S=\{1,5,8\}$.
 
+  $a \in S$ denotes that the object $a$ is a member of the set $S$. If $a$
+  is not a member of S, we write $a \not \in S$.
 
+  The \emph{union} of two sets $S$ and $T$ is the set
 
+  \[
+    S \cup T = \{x:x \in S \: or \: x \in T\}
+  \]
 
+% Venn diagram, showing the union of two sets
+\def\S{S}
+\def\T{\V{T}}
 
-
-% union, intersection
-
-
-
-
-% Venn diagram
-\def\A{A}
-\def\B{\V{B}}
-
-%\begin{figure}
 \begin{center}
 \begin{asy}
 size(4cm,0);
@@ -217,10 +217,66 @@ real r=1.5;
 path c1=circle(z1,r);
 path c2=circle(z2,r);
 fill(c1,colour1);
+fill(c2,colour1);
+
+picture intersection=new picture;
+fill(intersection,c1,colour1);
+clip(intersection,c2,colour1);
+
+add(intersection);
+
+draw(c1);
+draw(c2);
+
+draw("$S$",box,z1);            
+draw("$\V{T}$",box,z2);
+
+pair z=(0,-2);
+real m=3;
+margin BigMargin=Margin(0,m*dot(unit(z1-z),unit(z0-z)));
+
+draw(Label("$S\cup T$",0),z--z0,Arrow,BigMargin);
+draw(z--z1,Arrow,Margin(0,m));
+draw(z--z2,Arrow,Margin(0,m));
+
+shipout(bbox(0.25cm));
+\end{asy}
+\end{center}
+
+  This consists of those objects which lie in the set $S$ or in the set $T$,
+  or in both. So,
+
+  \[
+    \{1, 2, 3\} \cup \{3, 4, 5\} = \{1, 2, 3, 4, 5\}
+  \]
+
+  The \emph{intersection} of two sets $S$ and $T$ is the set
+
+  \[
+    S \cap T = \{x:x \in S \: and \: x \in T\}
+  \]
+
+% Venn diagram, showing the intersect of two sets
+\def\S{S}
+\def\T{\V{T}}
+
+\begin{center}
+\begin{asy}
+size(4cm,0);
+pen colour1=red;
+pen colour2=white;
+
+pair z0=(0,0);
+pair z1=(-1,0);
+pair z2=(1,0);
+real r=1.5;
+path c1=circle(z1,r);
+path c2=circle(z2,r);
+fill(c1,colour2);
 fill(c2,colour2);
 
 picture intersection=new picture;
-fill(intersection,c1,colour1+colour2);
+fill(intersection,c1,colour1);
 clip(intersection,c2);
 
 add(intersection);
@@ -228,25 +284,189 @@ add(intersection);
 draw(c1);
 draw(c2);
 
-//draw("$\A$",box,z1);              // Requires [inline] package option.
-//draw(Label("$\B$","$B$"),box,z2); // Requires [inline] package option.
-draw("$A$",box,z1);            
-draw("$\V{B}$",box,z2);
+draw("$S$",box,z1);            
+draw("$\V{T}$",box,z2);
 
 pair z=(0,-2);
 real m=3;
 margin BigMargin=Margin(0,m*dot(unit(z1-z),unit(z0-z)));
 
-draw(Label("$A\cap B$",0),conj(z)--z0,Arrow,BigMargin);
-draw(Label("$A\cup B$",0),z--z0,Arrow,BigMargin);
+draw(Label("$S\cap T$",0),z--z0,Arrow,BigMargin);
+
+shipout(bbox(0.25cm));
+\end{asy}
+\end{center}
+
+  This consists of those objects which lie in both the set $S$ and the set
+  $B$. So,
+
+  \[
+    \{1, 2, 3\} \cap \{2, 3, 4\} = \{2, 3\}
+  \]
+
+  The \emph{complement} of a set $T$ relative to a set $S$ is the set
+
+  \[
+    S - T = \{x:x \in S \: and \: x \not \in T\}
+  \]
+
+
+% Venn diagram, showing the complement of two sets
+\def\S{S}
+\def\T{\V{T}}
+
+\begin{center}
+\begin{asy}
+size(4cm,0);
+pen colour1=red;
+pen colour2=white;
+
+pair z0=(0,0);
+pair z1=(-1,0);
+pair z2=(1,0);
+real r=1.5;
+path c1=circle(z1,r);
+path c2=circle(z2,r);
+fill(c1,colour1);
+fill(c2,colour2);
+
+picture intersection=new picture;
+fill(intersection,c1,colour2);
+clip(intersection,c2);
+
+add(intersection);
+
+draw(c1);
+draw(c2);
+
+draw("$S$",box,z1);            
+draw("$\V{T}$",box,z2);
+
+pair z=(0,-2);
+real m=3;
+margin BigMargin=Margin(0,m*dot(unit(z1-z),unit(z0-z)));
+
+draw(Label("$S - T$",0),z--z0,Arrow,BigMargin);
 draw(z--z1,Arrow,Margin(0,m));
 draw(z--z2,Arrow,Margin(0,m));
 
 shipout(bbox(0.25cm));
 \end{asy}
-%\caption{Venn diagram}\label{venn}
 \end{center}
-%\end{figure}
+
+  This consists of those objects which lie in the set $S$ but not in the set
+  $T$. So,
+
+  \[
+    \{1, 2, 3\} - \{2, 3, 4\} = \{1\}
+  \]
+
+  The \emph{symmetric difference} of the sets $S$ and $T$ is the set
+
+  \[
+    S \Delta T = \{x:(x \in S \: and \: x \not \in T) \: or \: (x \in T \: and
+    \: x \not \in S)\}
+  \]
+
+% Venn diagram, showing the symmetric difference of two sets
+\def\S{S}
+\def\T{\V{T}}
+
+\begin{center}
+\begin{asy}
+size(4cm,0);
+pen colour1=red;
+pen colour2=green;
+pen colour3=white;
+
+pair z0=(0,0);
+pair z1=(-1,0);
+pair z2=(1,0);
+real r=1.5;
+path c1=circle(z1,r);
+path c2=circle(z2,r);
+fill(c1,colour1);
+fill(c2,colour1);
+
+picture intersection=new picture;
+fill(intersection,c1,colour3);
+clip(intersection,c2);
+
+add(intersection);
+
+draw(c1);
+draw(c2);
+
+draw("$S$",box,z1);            
+draw("$\V{T}$",box,z2);
+
+pair z=(0,-2);
+real m=3;
+margin BigMargin=Margin(0,m*dot(unit(z1-z),unit(z0-z)));
+
+draw(Label("$S\cap T$",0),z--z0,Arrow,BigMargin);
+
+shipout(bbox(0.25cm));
+\end{asy}
+\end{center}
+
+  This consists of those objects which lie either in one of the sets, but not
+  in both. So,
+
+  \[
+    \{1, 2, 3\} - \{2, 3, 4\} = \{1, 4\}
+  \]
+
+
+
+% why does this matter? how is it applied to tags and tagging?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -457,41 +677,50 @@ shipout(bbox(0.25cm));
       \url{http://visiontkd.co.uk/assetshome/pdf/Rightlegbias.pdf}
 
     \bibitem{golder:ct}
-      Scott A. Golder, Bernardo A. Huberman,
+      S. A. Golder, B. A. Huberman,
       \emph{The Structure of Collaborative Tagging Systems}, 2005.
       \url{http://www.hpl.hp.com/research/scl/papers/tags/tags.pdf}
 
     \bibitem{heymann:ccch}
-      Paul Heymann, Hector Garcia-Molina,
+      P. Heymann, H. Garcia-Molina,
       \emph{Collaborative Creation of Communal Hierarchical Taxonomies in
       Social Tagging Systems}, 2006.
       \url{http://ilpubs.stanford.edu:8090/775/1/2006-10.pdf}
 
+    \bibitem{hausdorff:sets}
+      F. Hausdorff,
+      \emph{Set theory},
+      Chelsea Publishing Company, 1991.
+
     \bibitem{huang:tt}
-      Jeff Huang, Katherine M. Thornton, Efthimis N. Efthimiadis,
+      J. Huang, K. M. Thornton, E. N. Efthimiadis,
       ``Conversational Tagging in Twitter,''
       \emph{Hypertext}, pp. 173-177, 2010.
 
     \bibitem{jones:folders}
-      William Jones, Ammy J. Phuwanartnurak, Rajdeep Gill, Harry Bruce,
+      W. Jones, A. J. Phuwanartnurak, R. Gill, H. Bruce,
       \emph{Don't Take My Folders Away! Organizing Personal Information to Get
       Things Done}, 2005.
       \url{https://dlib.lib.washington.edu/dspace/bitstream/handle/1773/2031/
            Don%27t%20take%20my%20folders%20away%2c%20current.pdf?sequence=2}
 
     \bibitem{mathes:folk}
-      Adam Mathes,
+      A. Mathes,
       ``Folksonomies -- Cooperative Classification and Communication Through
       Shared Metadata,''
       \emph{Computer Mediated Communication, LIS590CMC}, 2004.
 
     \bibitem{shirky:ontology}
-      Clay Shirky,
+      C. Shirky,
       \emph{Ontology is Overrated: Categories, Links, and Tags}, 2005.
       \url{http://www.shirky.com/writings/ontology_overrated.html}
 
+    \bibitem{wikipedia:sets}
+      \emph{Set theory}, July 19, 2010. \\
+      \url{http://en.wikipedia.org/wiki/Set_theory}
+
     \bibitem{wikipedia:tags}
-      \emph{Tag (metadata)}, July 12, 2010. \\
+      \emph{Tag (metadata)}, July 19, 2010. \\
       \url{http://en.wikipedia.org/wiki/Tag}
 
 \end{thebibliography}
