@@ -11,12 +11,10 @@ settings.outformat='';
 settings.toolbar=false;
 viewportmargin=(1,1);
 
-// Global Asymptote definitions can be put here.
+// Global Asymptote definitions
 import three;
 usepackage("bm");
 texpreamble("\def\V#1{\bm{#1}}");
-// One can globally override the default toolbar settings here:
-// settings.toolbar=true;
 
 size(4cm,0);
 pen colour1=red;
@@ -66,12 +64,10 @@ settings.outformat='';
 settings.toolbar=false;
 viewportmargin=(1,1);
 
-// Global Asymptote definitions can be put here.
+// Global Asymptote definitions
 import three;
 usepackage("bm");
 texpreamble("\def\V#1{\bm{#1}}");
-// One can globally override the default toolbar settings here:
-// settings.toolbar=true;
 
 size(4cm,0);
 pen colour1=red;
@@ -119,12 +115,10 @@ settings.outformat='';
 settings.toolbar=false;
 viewportmargin=(1,1);
 
-// Global Asymptote definitions can be put here.
+// Global Asymptote definitions
 import three;
 usepackage("bm");
 texpreamble("\def\V#1{\bm{#1}}");
-// One can globally override the default toolbar settings here:
-// settings.toolbar=true;
 
 size(4cm,0);
 pen colour1=red;
@@ -174,12 +168,10 @@ settings.outformat='';
 settings.toolbar=false;
 viewportmargin=(1,1);
 
-// Global Asymptote definitions can be put here.
+// Global Asymptote definitions
 import three;
 usepackage("bm");
 texpreamble("\def\V#1{\bm{#1}}");
-// One can globally override the default toolbar settings here:
-// settings.toolbar=true;
 
 size(4cm,0);
 pen colour1=red;
