@@ -11,7 +11,6 @@ settings.outformat='';
 settings.toolbar=false;
 viewportmargin=(1,1);
 
-// Global Asymptote definitions
 import three;
 usepackage("bm");
 texpreamble("\def\V#1{\bm{#1}}");
@@ -64,7 +63,6 @@ settings.outformat='';
 settings.toolbar=false;
 viewportmargin=(1,1);
 
-// Global Asymptote definitions
 import three;
 usepackage("bm");
 texpreamble("\def\V#1{\bm{#1}}");
@@ -115,7 +113,6 @@ settings.outformat='';
 settings.toolbar=false;
 viewportmargin=(1,1);
 
-// Global Asymptote definitions
 import three;
 usepackage("bm");
 texpreamble("\def\V#1{\bm{#1}}");
@@ -168,7 +165,6 @@ settings.outformat='';
 settings.toolbar=false;
 viewportmargin=(1,1);
 
-// Global Asymptote definitions
 import three;
 usepackage("bm");
 texpreamble("\def\V#1{\bm{#1}}");
