@@ -35,7 +35,7 @@ pair z=(0,-2);
 real m=3;
 margin BigMargin=Margin(0,m*dot(unit(z1-z),unit(z0-z)));
 
-draw(Label("$S\cap T$",0),z--z0,Arrow,BigMargin);
+draw(Label("$S \Delta T$",0),z--z0,Arrow,BigMargin);
 
 shipout(bbox(0.25cm));
 \end{asy}

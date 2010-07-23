@@ -1,27 +1,3 @@
-% Method
-%   Analysis of data || Processing
-%    Difficulties related to tagging
-%  Uncertainty
-%
-% Results
-%   Tables
-%   Graphs
-% Conclusion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 % Make two column format for LaTex 2e
 \documentclass[10pt,twocolumn,a4paper]{article}
 
@@ -41,7 +17,7 @@
 \setlength{\headheight}{0in}
 \setlength{\headsep}{0in}
 \setlength{\parindent}{1pc}
-\setlength{\oddsidemargin}{-.1875in}  % Centers text
+\setlength{\oddsidemargin}{-.1875in}    % Centers the text
 \setlength{\evensidemargin}{-.1875in}
 
 % Add the period after section numbers, and adjust spacing
@@ -49,18 +25,14 @@
 \newcommand{\SubSection}[1]{\vspace{-3pt}\subsection{\hskip -1em.~~#1}
 \vspace{-3pt}}
 
-
+% Global Asymptote definitions
 \begin{asydef}
-// Global Asymptote definitions
 import three;
 usepackage("bm");
 texpreamble("\def\V#1{\bm{#1}}");
 \end{asydef}
 
-
-
-
-
+% Document
 \begin{document}
 
 % Make the title bold
@@ -80,7 +52,7 @@ texpreamble("\def\V#1{\bm{#1}}");
 % Produce the title
 \maketitle
 
-
+% Sections
 \section*{\centering Abstract}
 \begin{em}
 
@@ -93,9 +65,6 @@ texpreamble("\def\V#1{\bm{#1}}");
 
   Todo.
 \end{em}
-
-
-
 
 
 \Section{Introduction}
@@ -254,84 +223,8 @@ texpreamble("\def\V#1{\bm{#1}}");
   in both. So,
 
   \[
-    \{1, 2, 3\} - \{2, 3, 4\} = \{1, 4\}
+    \{1, 2, 3\} \Delta \{2, 3, 4\} = \{1, 4\}
   \]
-
-
-
-% why does this matter? how is it applied to tags and tagging?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 \Section{Method}
@@ -347,44 +240,47 @@ texpreamble("\def\V#1{\bm{#1}}");
   and the English description of each movement is from the condensed
   encyclopedia\cite{cyclo:con}.
 
+  The terminology dataset is organized by pattern names. It contains a list of
+  all techniques in patterns Chon-Ji to Juche using terminology. It also
+  includes motion type on movements that are not performed in normal motion.
+  The file was reviewed and minor corrections were made to the terminology.
+
 
 \SubSection{Approach}
-% collecting data into text files
-% tagging (how is tagging used? what is its role?)
 
-  Todo.
+% the approach taken to register and investigate the dataset
 
 
-% registered terminology to all pattern movements, grouped by pattern names, including their pattern movement number, and motion type (normal, slow, etc.), link to movements_all.txt ?
-%   reviewed the terminology and movement type with odd-magne using a wiki
-%   made a few changes (corrected terminology for punch for instance)
-% added english description from the condensed encyclopedia to pattern
-%   checked that the terminology corresponded to the actual pattern movement
+
+
+
+
+
+% added English movement description from the condensed encyclopedia
 % added tags
-%   (documented the tagging process)
 %   give an overview over (groups of) tags, see movements_with_tags.txt
-% divided each pattern into its own text file
+%     Group of tags
+%     Groups of techniques {blocks, strikes, thrusts, punches}
+%       height
+%       weapon
+%       type etc.
+%   show an example (chon-ji movement no. 1, for instance)
+% divided each pattern into its own text file (./patterns/*)
 % modelled the project in the database (./models)
 %   explain all attributes etc.
 % made a ruby script to parse the text files (link to bootstrap.rb ?)
 %   adding the contents into a database using datamapper (orm) (link to datamapper) || populated the database using Datamapper (orm)
 %   saving the data into an sqlite3 database for analysis
 %
-% show an example (chon-ji movement no. 1, for instance)
-%
-%
-%
-% The terminology to all pattern movements where first inserted into a text
-% file, along with.. || including..
-%
 
-%   Tagging
-%     Group of tags
-%     Groups of techniques {blocks, strikes, thrusts, punches}
-%       height
-%       weapon
-%       type etc.
 
+
+
+
+
+% Tagging
+%   tagging (how is tagging used? what is its role?)
+%   connect set theory to tagging? how is it applied to tags and tagging?
 
 
 % hva forholder jeg meg til ved utvetydigheter (15-binds vs. *kondenserte*)
@@ -415,6 +311,8 @@ texpreamble("\def\V#1{\bm{#1}}");
 %but on the other hand you don't have room for all the caveats.
 
 % Observation: Kicks happen between stances
+% Tables
+% Graphs
 
 \Section{Conclusions}
 
