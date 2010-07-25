@@ -236,9 +236,9 @@ texpreamble("\def\V#1{\bm{#1}}");
 \SubSection{The Data}
 
   Our data comes from two different sources. The terminology associated with
-  pattern movements is from Taekwon-Do ITF Sonkal Praha\footnote{\url{http://sonkal.taekwondo.cz}},
-  and the English description of each movement is from the condensed
-  encyclopedia\cite{cyclo:con}.
+  pattern movements is from Taekwon-Do ITF Sonkal Praha\footnote{\url{http://
+  sonkal.taekwondo.cz}}, and the English description of each movement is from
+  the condensed encyclopedia\cite{cyclo:con}.
 
   The terminology dataset is organized by pattern names. It contains a list of
   all techniques in patterns Chon-Ji to Juche using terminology. It also
@@ -250,11 +250,66 @@ texpreamble("\def\V#1{\bm{#1}}");
 
 \SubSection{Approach}
 
-% the approach taken to tag and investigate the dataset
+  Each pattern movement is tagged on the basis of their English description
+  from the condensed encyclopedia. In addition, suitable tags were attached to
+  the dataset while performing the pattern to add necessary details.
+
+  The first movement in Chon-Ji, for instance, is to ``[m]ove the left foot to
+  B, forming a left walking stance toward B while executing a low block to B
+  with the left forearm.'' Removing the unnecessary parts of the description,
+  we're left with:
+
+  \[
+    \{left \: walking \: stance, \: low \: block, \: left \: forearm\}
+  \]
+
+  Converting the above to tags gives us:
+
+  \[
+    \{walking\_stance, left\_stance, low\_technique, left\_technique,
+    block, forearm, outer\_forearm, normal\_motion\}
+  \]
+
+
+% why?
+%because it to tags means we need to be more specific, so it's easier to
+%retrieve movements of same qualities..
+ 
+
+% pek på forskjeller mellom tags og bevegelse, hvilke detaljer som blir
+% utelatt, detaljer i forhold til diagrammet er ikke tatt med i datasettet
 
 
 
 
+% techniques were grouped
+
+%stance[type, (side)], technique[height,
+
+
+%stance type, [stance side], technique height, technique side, [direction of
+%technique side], technique type, tool group, technique tool,
+%[specific technique tool], motion type
+
+%stance (type, [side]), technique (height, side, [direction], type), technique
+%(tool group, tool, [specific tool], motion type
+
+
+%stance type
+%stance side (left, right, none (sitting stances for example))
+%technique height
+%technique side (left, right or both)
+%[direction of technique (side_front)]
+%technique type (attack or block)
+%tool group (forearm, strike, thrust, punch)
+%technique tool (outer_forearm, rising_block, front_strike, finger, angle_punch)
+%specific technique tool, when needed (side_elbow, double_finger)
+%motion type (normal_motion, fast_motion)
+
+
+%ett eksempel med blokk, pluss ett eksempel med angrep (begge eksemplene bør få
+%med de aller fleste momentene nevnt over for å illustrere hva som menes med de
+%ulike gruppene)
 
 
 
@@ -265,7 +320,40 @@ texpreamble("\def\V#1{\bm{#1}}");
 %       height
 %       weapon
 %       type etc.
-%   show an example (chon-ji movement no. 1, for instance)
+
+
+% Tagging
+%   tagging (how is tagging used? what is its role?)
+%   connect set theory to tagging? how is it applied to tags and tagging?
+
+
+% hva forholder jeg meg til ved utvetydigheter (15-binds vs. *kondenserte*)
+% vurderinger på teknikker
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 % modelled the project in the database (./models)
 %   explain all attributes etc.
 % made a ruby script to parse the text files (link to bootstrap.rb ?)
@@ -276,16 +364,6 @@ texpreamble("\def\V#1{\bm{#1}}");
 
 
 
-
-
-% Tagging
-%   tagging (how is tagging used? what is its role?)
-%   connect set theory to tagging? how is it applied to tags and tagging?
-
-
-% hva forholder jeg meg til ved utvetydigheter (15-binds vs. *kondenserte*)
-% vurderinger på teknikker
-% hvorfor er tekniker gruppert slik de er?
 
 
 
