@@ -8,6 +8,7 @@
 \usepackage{asymptote}          % Vector graphics language
 \usepackage{listings}           % Pretty source code listings
 \usepackage{url}                % Handle URLs better
+\usepackage{amsmath}            % Extend mathematical typesetting
 
 % Set dimensions of columns, gap between columns, and paragraph indent
 \setlength{\textheight}{8.875in}
@@ -248,16 +249,24 @@ texpreamble("\def\V#1{\bm{#1}}");
   reviewing, and making minor corrections to, the terminology.
 
 
+
+% TODO: vurderinger på teknikker, se notater i wikien
+
+
+
+
+
+
 \SubSection{Approach}
 
   Each pattern movement is tagged on the basis of their English description
-  from the condensed encyclopedia. In addition, suitable tags were attached to
-  the dataset while performing the pattern to add necessary details.
+  from the condensed encyclopedia. In addition, suitable tags is attached to
+  the dataset while performing the pattern to add necessary detail.
 
   The first movement in Chon-Ji, for instance, is to ``[m]ove the left foot to
   B, forming a left walking stance toward B while executing a low block to B
-  with the left forearm.'' Removing the unnecessary parts of the description,
-  we're left with:
+  with the left forearm\cite{cyclo:vol1}.'' Removing the verbose parts of the
+  description we're left with:
 
   \[
     \{left \: walking \: stance, \: low \: block, \: left \: forearm\}
@@ -265,77 +274,23 @@ texpreamble("\def\V#1{\bm{#1}}");
 
   Converting the above to tags gives us:
 
-  \[
-    \{walking\_stance, left\_stance, low\_technique, left\_technique,
-    block, forearm, outer\_forearm, normal\_motion\}
-  \]
+  \begin{align*}
+    \{walking \: stance, \: left \: stance, \: low \: technique, \\
+    left \: technique, \: block, \: forearm, \: outer \: forearm, \\
+    normal \: motion\}
+  \end{align*}
 
+  Information about the stance type is presented first, followed by stance
+  side (left, right or none where applicable --- ie. sitting stance, technique
+  height (low, middle, high), technique side (left arm or right arm, can also
+  be both), direction of the technique (when needed), primary technique type
+  (attack, block, kick), technique group (punch, strike, thrust), tool group
+  (forearm, knife hand, finger etc.), tool (inner forearm, outer forearm,
+  double finger etc.), and finally motion type (normal motion, slow motion,
+  consecutive motion and so on).
 
-% why?
-%because it to tags means we need to be more specific, so it's easier to
-%retrieve movements of same qualities..
- 
-
-% pek på forskjeller mellom tags og bevegelse, hvilke detaljer som blir
-% utelatt, detaljer i forhold til diagrammet er ikke tatt med i datasettet
-
-
-
-
-% techniques were grouped
-
-%stance[type, (side)], technique[height,
-
-
-%stance type, [stance side], technique height, technique side, [direction of
-%technique side], technique type, tool group, technique tool,
-%[specific technique tool], motion type
-
-%stance (type, [side]), technique (height, side, [direction], type), technique
-%(tool group, tool, [specific tool], motion type
-
-
-%stance type
-%stance side (left, right, none (sitting stances for example))
-%technique height
-%technique side (left, right or both)
-%[direction of technique (side_front)]
-%technique type (attack or block)
-%tool group (forearm, strike, thrust, punch)
-%technique tool (outer_forearm, rising_block, front_strike, finger, angle_punch)
-%specific technique tool, when needed (side_elbow, double_finger)
-%motion type (normal_motion, fast_motion)
-
-
-%ett eksempel med blokk, pluss ett eksempel med angrep (begge eksemplene bør få
-%med de aller fleste momentene nevnt over for å illustrere hva som menes med de
-%ulike gruppene)
-
-
-
-% added tags
-%   give an overview over (groups of) tags, see movements_with_tags.txt
-%     Group of tags
-%     Groups of techniques {blocks, strikes, thrusts, punches}
-%       height
-%       weapon
-%       type etc.
-
-
-% Tagging
-%   tagging (how is tagging used? what is its role?)
-%   connect set theory to tagging? how is it applied to tags and tagging?
-
-
-% hva forholder jeg meg til ved utvetydigheter (15-binds vs. *kondenserte*)
-% vurderinger på teknikker
-
-
-
-
-
-
-
+  Tagging movements in such a formalized manner enables us to retrieve the
+  data we're interested in, using concepts from set theory.
 
 
 
