@@ -249,14 +249,6 @@ texpreamble("\def\V#1{\bm{#1}}");
   reviewing, and making minor corrections to, the terminology.
 
 
-
-% TODO: vurderinger på teknikker, se notater i wikien
-
-
-
-
-
-
 \SubSection{Approach}
 
   Each pattern movement is tagged on the basis of their English description
@@ -289,8 +281,86 @@ texpreamble("\def\V#1{\bm{#1}}");
   double finger etc.), and finally motion type (normal motion, slow motion,
   consecutive motion and so on).
 
-  Tagging movements in such a formalized manner enables us to retrieve the
-  data we're interested in, using concepts from set theory.
+  % FIXME add database and ruby script info here
+  % modelled the project in the database (./models)
+  %   explain all attributes etc.
+  % made a ruby script to parse the text files (link to bootstrap.rb ?)
+  %   adding the contents into a database using datamapper (orm) (link to datamapper) || populated the database using Datamapper (orm)
+  %   saving the data into an sqlite3 database for analysis
+  %
+
+  Tagging movements in such a formalized manner, and registering it in a
+  database, enables us to retrieve the data we're interested in using concepts
+  from set theory.
+
+
+\SubSection{Classification}
+
+% TODO: vurderinger på teknikker, se notater i wikien
+
+
+\begin{itemize}
+  \item
+    \emph{Yul-Gok Tul}
+    \begin{itemize}
+      \item
+        {\bf Movement 24}, \emph{Gunnun so ap palkup bandae taerigi}, is
+        tagged with $\{front\_strike\}$ due to the English description of
+        striking with the right front elbow.
+      \item
+        {\bf Movement 27}, \emph{Gunnun so ap palkup bandae taerigi}, is
+        tagged with $\{front\_strike\}$ due to the English description of
+        striking with the left front elbow.
+    \end{itemize}
+  \item
+    \emph{Joong-Gun Tul}
+    \begin{itemize}
+      \item
+        {\bf Movement 8}, \emph{Gunnun so wipalkup taerigi}, is tagged
+        $\{upper\_strike, \: upper\_elbow\}$ since the English description
+        says that the movement is ``a right upper elbow strike.''
+      \item
+        {\bf Movement 10}, \emph{Gunnun so wipalkup taerigi}, is tagged
+        $\{upper\_strike, \: upper\_elbow\}$ since the English description
+        says that the movement is ``a left upper elbow strike.''
+      \item
+        {\bf Movement 11}, \emph{Gunnun so sang sewo jirugi}, is tagged as a
+        left and right technique, with $\{left\_technique, \:
+        right\_technique\}$.
+      \item
+        {\bf Movement 12}, \emph{Gunnun so sang dwijibo jirugi}, is tagged as
+        a left and right technique, with $\{left\_technique, \:
+        right\_technique\}$.
+      \item
+        {\bf Movement 27}, \emph{Nachuo so sonbadak noollo makgi}, is tagged
+        as a $\{middle\_technique, \: low\_technique\}$ because the left hand
+        is in the middle section and the right hand, forming the pressing
+        block, is in the low section of the body. Furthermore, the movement
+        has been tagged as a $\{right\_technique, \: left\_technique\}$ to
+        reflect that both hands are being used.
+      \item
+        {\bf Movement 29}, \emph{Nachuo so sonbadak noollo makgi}, is tagged
+        as a $\{middle\_technique, \: low\_technique\}$ because the right hand
+        is in the middle section and the left hand, forming the pressing
+        block, is in the low section of the body. Furthermore, the movement
+        has been tagged as a $\{right\_technique, \: left\_technique\}$ to
+        reflect that both hands are being used.
+    \end{itemize}
+  \item
+    \emph{Choong-Moo Tul}
+    \begin{itemize}
+      \item
+        {\bf Movement 19
+    \end{itemize}
+  \item
+    \emph{Pragmatic}
+    \begin{itemize}
+      \item
+        Free software is available for experimentation and testing.
+      \item
+        Most readers of this text have a background in relational technology. 
+    \end{itemize}
+\end{itemize}
 
 
 
@@ -309,12 +379,9 @@ texpreamble("\def\V#1{\bm{#1}}");
 
 
 
-% modelled the project in the database (./models)
-%   explain all attributes etc.
-% made a ruby script to parse the text files (link to bootstrap.rb ?)
-%   adding the contents into a database using datamapper (orm) (link to datamapper) || populated the database using Datamapper (orm)
-%   saving the data into an sqlite3 database for analysis
-%
+
+
+
 
 
 
