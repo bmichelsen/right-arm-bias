@@ -92,7 +92,8 @@ Lower the left foot to the right foot and then move the right foot to C forming 
 
 19.
 Niunja so sonkal kaunde daebi makgi
-l_stance, left_stance, middle_technique, right_technique, block, guarding_block, knife_hand, normal_motion
+l_stance, left_stance, middle_technique, right_technique, block,
+guarding_block, knife_hand, jumping_motion
 Jump and spin around counter-clockwise, landing on the same spot to form a left L-stance toward C while executing a middle guarding block to C with a knife hand.
 
 20.

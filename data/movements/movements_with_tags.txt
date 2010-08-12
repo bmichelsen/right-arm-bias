@@ -1,8 +1,6 @@
 technique height
   low, middle, high
 
-attack, block, kick
-
 motion_type
   normal_motion
   slow_motion
@@ -14,12 +12,6 @@ motion_type
   connecting_motion
   jumping_motion
   flying_motion
-
-Is there a bias towards the right arm in Taekwon-Do patterns?
-  blocks
-  attacks
-
-left_turn, right_turn, forward, backward, not_moving (stationary), knee_spring?
 
 block
   forearm
@@ -33,10 +25,6 @@ block_type
   wedging_block
   circular_block (dollimyo makgi)
   hooking_block
-
-block, block_type, weapon_group, weapon_type
-  ex. block, twin_block, forearm, outer_forearm
-
 
 attacks
   punch
@@ -1056,7 +1044,7 @@ Choong-Moo
     Lower the left foot to the right foot and then move the right foot to C forming a right fixed stance toward C while executing a U-shape block toward C.
 
 19. Niunja so sonkal kaunde daebi makgi
-    l_stance, left_stance, middle_technique, right_technique, block, guarding_block, knife_hand, normal_motion
+    l_stance, left_stance, middle_technique, right_technique, block, guarding_block, knife_hand, jumping_motion
     Jump and spin around counter-clockwise, landing on the same spot to form a left L-stance toward C while executing a middle guarding block to C with a knife hand.
 
 20. Gunnun so dwijibun sonkut najunde bandae tulgi
@@ -1517,7 +1505,7 @@ Ge-Baek
     Move the right foot on line CD, forming a left walking stance toward D while striking the left palm with the right front elbow.
 
 28. Kyocha so doo palmok nopunde makgi
-    x_stance, right_stance, high_technique, right_technique, block, forearm, inner_forearm, double_forearm, normal_motion
+    x_stance, right_stance, high_technique, right_technique, block, forearm, inner_forearm, double_forearm, jumping_motion
     Jump to D, forming a right x-stance toward BD while executing a high block to D with the right double forearm.
 
 29. Annun so sonbadak duro makgi
