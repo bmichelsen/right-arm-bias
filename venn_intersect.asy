@@ -6,7 +6,7 @@
 \begin{center}
 \begin{asy}
 size(4cm,0);
-pen colour1=red;
+pen colour1=lightgrey;
 pen colour2=white;
 
 pair z0=(0,0);

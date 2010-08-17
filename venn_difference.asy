@@ -6,7 +6,7 @@
 \begin{center}
 \begin{asy}
 size(4cm,0);
-pen colour1=red;
+pen colour1=lightgrey;
 pen colour2=green;
 pen colour3=white;
 
