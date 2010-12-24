@@ -1,4 +1,6 @@
 article.asy
+article-?.asy
+article.pre
 *.aux
 *.dvi
 *.eps
