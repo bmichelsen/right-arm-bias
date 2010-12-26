@@ -1,4 +1,5 @@
-require 'lab'
+require_relative 'lab'
+#require "/home/bjorn/scm/git/articles/left_arm_bias/lab.rb"
 
 # ----------------------------------------------------------------------
 # Database migration
