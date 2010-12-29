@@ -252,7 +252,7 @@ Do-San
     Execute a middle punch to F with the left fist while maintaining a right walking stance toward F
 
 13. Gunnun so bakat palmok nopunde hechyo makgi
-    walking_stance, left_stance, middle_technique, left_technique, right_technique, block, wedging_block, forearm, outer_forearm, normal_motion
+    walking_stance, left_stance, high_technique, left_technique, right_technique, block, wedging_block, forearm, outer_forearm, normal_motion
     Move the left foot to CE, forming a left walking stance toward CE, at the same time executing a high wedging block to CE with the outer forearm
 
 14. Kaunde apcha busigi
@@ -268,7 +268,7 @@ Do-San
     Execute a middle punch to CE with the left fist while maintaining a right walking stance toward CE
 
 17. Gunnun so bakat palmok nopunde hechyo makgi
-    walking_stance, right_stance, middle_technique, left_technique, right_technique, block, wedging_block, forearm, outer_forearm, normal_motion
+    walking_stance, right_stance, high_technique, left_technique, right_technique, block, wedging_block, forearm, outer_forearm, normal_motion
     Move the right foot to CF, forming a right walking stance toward CF while executing a high wedging block to CF with the outer forearm
 
 18. Kaunde apcha busigi
