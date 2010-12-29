@@ -77,9 +77,9 @@ texpreamble("\def\V#1{\bm{#1}}");
 
   Combined in a pattern, it allows the student to systematically deal with one
   or several imaginary opponents under various assumptions, using every
-  available attacking and blocking tool from different directions.
-  Furthermore, the techniques should also be evenly distributed between the
-  left and the right side\cite{cyclo:vol1}.
+  available attacking and blocking tool from different directions. In
+  addition, the techniques should also be evenly distributed between the left
+  and the right side\cite{cyclo:vol1}.
 
   It has, however, recently been observed that a bias towards the right leg
   exist. The study by Gibbs\cite{rlb} show that there is a total of 152 kicks
@@ -94,8 +94,8 @@ texpreamble("\def\V#1{\bm{#1}}");
   are with the right leg, and about 42\% with the left. Thus, the right leg
   bias still holds.
 
-  In this article, therefore, we analyze hand techniques in patterns Chon-Ji
-  to Juche using tags and then report our findings of a left arm bias.
+  In this article we analyze hand techniques in patterns Chon-Ji to Juche
+  using tags, and then report our findings of a left arm bias.
 
 
 \SubSection{Tags}
@@ -126,7 +126,7 @@ texpreamble("\def\V#1{\bm{#1}}");
 
   \emph{Tags}, on the other hand, are non-hierarchical descriptive terms,
   keywords or labels that is attached to an object for later retrieval
-  \cite{golder:ct}\cite{huang:tt}\cite{shirky:ontology}\cite{wikipedia:tags}.
+  \cite{golder:ct}\cite{huang:tt}\cite{shirky:ontology}.
 
   They are \emph{non-hierarchical} and \emph{inclusive}, which is to say that
   an object can be associated with a great variety of tags
@@ -142,9 +142,9 @@ texpreamble("\def\V#1{\bm{#1}}");
 
 
 \SubSection{Set theory}
-  A \emph{set} is a collection of distinct objects. It is a plurality thought
-  of as a unit\cite{hausdorff:sets}. \emph{Set theory} is the branch of
-  mathematics that studies sets\cite{wikipedia:tags}.
+  A \emph{set} is a collection of distinct objects. It is ``a plurality
+  thought of as a unit''\cite{hausdorff:sets}. \emph{Set theory}, then, is the
+  branch of mathematics that studies sets.
 
   An object which has been tagged contains a collection, or a set, of tags.
   Each tag is an element of the set. The order of elements within the set is
@@ -153,8 +153,8 @@ texpreamble("\def\V#1{\bm{#1}}");
   For example, $\{1,5,8\}$ is a set with three elements: 1, 5 and 8.
   $\{5,8,1\}$ is the same set, since the order of the elements doesn't matter.
   $\{1,1,1\}$, however, is not a valid set because the element 1 occurs
-  repeatedly. Elements in a set can contain strings as well, so $\{loons,
-  terns, penguins\}$ is also a valid set.
+  repeatedly. Elements in a set can contain strings as well, so $\{blocks,
+  punches, strikes, thrusts\}$ is also a valid set.
 
   We usually denote a set by a capital letter for reference purposes. For
   instance, $S=\{1,5,8\}$.
@@ -241,30 +241,38 @@ texpreamble("\def\V#1{\bm{#1}}");
   sonkal.taekwondo.cz}}, and the English description of each movement is from
   the condensed encyclopedia\cite{cyclo:con}.
 
-  The terminology dataset is organized by pattern names. It contains a list of
-  all techniques in patterns Chon-Ji to Juche using terminology. It also
-  includes motion type on movements that are not performed in normal motion.
+  The dataset is organized by pattern names. It contains a list of all
+  techniques in patterns Chon-Ji to Juche. For each movement, the following
+  data has been registered:
 
-  The English description to every movement was registered manually after
-  reviewing, and making minor corrections to, the terminology.
+  \begin{enumerate}
+    \item Movement number
+    \item English description
+    \item Terminology
+    \item Tags
+  \end{enumerate}
 
 
 \SubSection{Approach}
 
-  Each pattern movement is tagged on the basis of their English description
-  from the condensed encyclopedia. In addition, suitable tags were attached to
-  the dataset while performing the pattern to add necessary detail.
+  The movement number, together with the English description of each movement,
+  were registered manually from the condensed encyclopedia. After reviewing
+  and making minor corrections to the terminology data, it too was added.
+  
+  Suitable tags were attached to every movement by first extracting keywords
+  from their English description, and second adding more detailed tags while
+  performing the pattern.
 
   The first movement in Chon-Ji, for instance, is to ``[m]ove the left foot to
   B, forming a left walking stance toward B while executing a low block to B
   with the left forearm\cite{cyclo:vol1}.'' Removing the verbose parts of the
-  description we're left with:
+  description we are left with:
 
   \[
     \{left \: walking \: stance, \: low \: block, \: left \: forearm\}
   \]
 
-  Converting the above to tags gives us:
+  Supplementing the above with tags containing more information gives us:
 
   \begin{align*}
     \{walking \: stance, \: left \: stance, \: low \: technique, \\
@@ -290,8 +298,8 @@ texpreamble("\def\V#1{\bm{#1}}");
   %
 
   Tagging movements in such a formalized manner, and registering it in a
-  database, enables us to retrieve the data we're interested in using concepts
-  from set theory.
+  database, enables us to retrieve the data we are interested in using
+  concepts from set theory.
 
 
 \SubSection{Classification}
@@ -331,19 +339,19 @@ texpreamble("\def\V#1{\bm{#1}}");
         a left and right technique, with $\{left\_technique, \:
         right\_technique\}$.
       \item
-        {\bf Movement 27}, \emph{Nachuo so sonbadak noollo makgi}, is tagged
-        as a $\{middle\_technique, \: low\_technique\}$ because the left hand
-        is in the middle section and the right hand, forming the pressing
-        block, is in the low section of the body. Furthermore, the movement
-        has been tagged as a $\{right\_technique, \: left\_technique\}$ to
-        reflect that both hands are being used.
+        {\bf Movement 27}, \emph{Nachuo so sonbadak noollo makgi}, is tagged as
+        a $\{middle\_technique, \: low\_technique\}$ because the left hand is
+        in the middle section and the right hand, forming the pressing block,
+        is in the low section of the body. The movement has, additionally, been
+        tagged as a $\{right\_technique, \: left\_technique\}$ to reflect that
+        both hands are being used.
       \item
-        {\bf Movement 29}, \emph{Nachuo so sonbadak noollo makgi}, is tagged
-        as a $\{middle\_technique, \: low\_technique\}$ because the right hand
-        is in the middle section and the left hand, forming the pressing
-        block, is in the low section of the body. Furthermore, the movement
-        has been tagged as a $\{right\_technique, \: left\_technique\}$ to
-        reflect that both hands are being used.
+        {\bf Movement 29}, \emph{Nachuo so sonbadak noollo makgi}, is tagged as
+        a $\{middle\_technique, \: low\_technique\}$ because the right hand is
+        in the middle section and the left hand, forming the pressing block, is
+        in the low section of the body. The movement has, additionally, been
+        tagged as a $\{right\_technique, \: left\_technique\}$ to reflect that
+        both hands are being used.
     \end{itemize}
   \item
     \emph{Po-Eun Tul}
@@ -499,41 +507,6 @@ texpreamble("\def\V#1{\bm{#1}}");
   \end{table}
 
 
-\begin{table}
-  \centering
-  \begin{tabular}{l|c|c|c} \hline \hline
-    & High & Middle & Low \\ \hline
-
-    Blocks    & x   & y   & z \\
-    Punches   & x   & y   & z \\
-    Strikes   & x   & y   & z \\
-    Thrusts   & x   & y   & z \\
-    \hline
-
-  \end{tabular}
-  \caption{Total number of techniques by height.}
-  %\label{tab:table1}
-  \end{table}
-
-
-\begin{table}
-  \centering
-  \begin{tabular}{l|c|c|c} \hline \hline
-    & High & Middle & Low \\ \hline
-
-    Blocks    & x   & y   & z \\
-    Punches   & x   & y   & z \\
-    Strikes   & x   & y   & z \\
-    Thrusts   & x   & y   & z \\
-    \hline
-
-  \end{tabular}
-  \caption{Total number of techniques by height and arm.}
-  %\label{tab:table1}
-  \end{table}
-
-
-% percent more useful than numbers?
 
 
 
@@ -596,14 +569,6 @@ texpreamble("\def\V#1{\bm{#1}}");
       C. Shirky,
       \emph{Ontology is Overrated: Categories, Links, and Tags}, 2005.
       \url{http://www.shirky.com/writings/ontology_overrated.html}
-
-    \bibitem{wikipedia:sets}
-      \emph{Set theory}, July 19, 2010. \\
-      \url{http://en.wikipedia.org/wiki/Set_theory}
-
-    \bibitem{wikipedia:tags}
-      \emph{Tag (metadata)}, July 19, 2010. \\
-      \url{http://en.wikipedia.org/wiki/Tag}
 
 \end{thebibliography}
 

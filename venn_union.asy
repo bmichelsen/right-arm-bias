@@ -1,4 +1,5 @@
 % Venn diagram, showing the union of two sets
+% Adjusted from http://asymptote.sourceforge.net/doc/LaTeX-usage.html
 
 \def\S{S}
 \def\T{\V{T}}
