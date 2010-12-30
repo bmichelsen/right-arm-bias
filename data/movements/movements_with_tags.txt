@@ -612,7 +612,7 @@ Joong-Gun
     walking_stance, right_stance, high_technique, left_technique, attack, strike, upper_strike, elbow, upper_elbow, normal_motion
     Execute a left upper elbow strike, at the same time forming a right walking stance toward D, slipping the right foot to D
 
-11. Gunnun so sang joomuk nopunde sewo jirugi
+11. Gunnun so sang sewo jirugi
     walking_stance, left_stance, high_technique, left_technique, right_technique, attack, punch, vertical_punch, twin_fist, normal_motion
     Move the left foot to D, forming a left walking stance toward D while executing a high vertical punch to D with a twin fist
 
@@ -731,7 +731,7 @@ Toi-Gae
     walking_stance, left_stance, low_technique, left_technique, right_technique, block, pressing_block, x_fist, continuous_motion
     Move the left foot to D, forming a left walking stance toward D while executing a pressing block with an X-fist
 
-8.  Gunnun so sang joomuk nopunde sewo jirugi Perform 7 and 8 in a continuous motion.
+8.  Gunnun so sang sewo jirugi Perform 7 and 8 in a continuous motion.
     walking_stance, left_stance, high_technique, left_technique, right_technique, attack, punch, vertical_punch, twin_fist, continuous motion
     Execute a high vertical punch to D with a twin fist while maintaining a left walking stance toward D. Perform 7 and 8 in a continuous motion
 
@@ -1212,7 +1212,7 @@ Kwang-Gae
     low_stance, left_stance, high_technique, left_technique, attack, thrust, fingertip, flat_fingertip, slow_motion
     Execute a high thrust to C with the left flat fingertip while forming a left low stance toward C, slipping the left foot to C.
 
-31. Gunnun so sang joomuk nopunde sewo jirugi
+31. Gunnun so sang sewo jirugi
     walking_stance, right_stance, high_technique, left_technique, right_technique, attack, punch, vertical_punch, twin_fist, stamping_motion
     Move the right foot to C in a stamping motion, forming a right walking stance toward C while executing a high vertical punch to C with a twin fist.
 
@@ -1488,7 +1488,7 @@ Ge-Baek
     right_technique, kick, side_piercing_kick, flying_motion, fast_motion
     Execute a flying side piercing kick to C with the right foot. Perform 22 and 23 in a fast motion.
 
-24. Gunnun so sang joomuk nopunde sewo jirugi
+24. Gunnun so sang sewo jirugi
     walking_stance, right_stance, high_technique, left_technique, right_technique, attack, punch, vertical_punch, twin_fist, stamping_motion
     Land to C to form a right walking stance toward C while executing a high vertical punch to C with a twin fist.
 
@@ -1528,7 +1528,7 @@ Ge-Baek
     right_technique, middle_technique, kick, turning_kick, skipping_motion
     Move the left foot to A about half a shoulder width while executing a middle turning kick to C with the right foot.
 
-34. Gunnun so sang joomuk nopunde sewo jirugi
+34. Gunnun so sang sewo jirugi
     walking_stance, left_stance, high_technique, left_technique, right_technique, attack, punch, vertical_punch, twin_fist, normal_motion
     Lower the right foot to C, and then turn counter-clockwise to form a left walking stance toward D, pivoting with the right foot while executing a high vertical punch to D with a twin fist.
 
@@ -1804,7 +1804,7 @@ Choong-Jang
     right_technique, high_technique, kick, turning_kick, normal_motion
     Execute a high turning kick to D with the right foot supporting the body with both hands and the left knee.
 
-13. Nopunde jirugi
+13. Ap joomuk nopunde bandae jirugi
     high_technique, right_technique, attack, punch, normal_motion
     Lower the right foot to D and then execute a high punch to D with the right fist while pressing the ground with the left palm.
 

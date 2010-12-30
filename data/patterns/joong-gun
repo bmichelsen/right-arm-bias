@@ -51,7 +51,7 @@ walking_stance, right_stance, high_technique, left_technique, attack, strike, up
 Execute a left upper elbow strike, at the same time forming a right walking stance toward D, slipping the right foot to D
 
 11.
-Gunnun so sang joomuk nopunde sewo jirugi
+Gunnun so sang sewo jirugi
 walking_stance, left_stance, high_technique, left_technique, right_technique, attack, punch, vertical_punch, twin_fist, normal_motion
 Move the left foot to D, forming a left walking stance toward D while executing a high vertical punch to D with a twin fist
 
