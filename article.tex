@@ -230,8 +230,10 @@ texpreamble("\def\V#1{\bm{#1}}");
 
 \Section{Method}
 
-  In this section we describe where the data originates, and then elaborate on
-  the approach taken to register and investigate the dataset.
+  In this section we describe where the data originates. Next we elaborate on
+  the approach taken to register and investigate the dataset. Finally, we have
+  a look at how each movement has been classified with emphasis on special
+  cases.
 
 
 \SubSection{The Data}
@@ -260,13 +262,13 @@ texpreamble("\def\V#1{\bm{#1}}");
   and making minor corrections to the terminology data, it too was added.
   
   Suitable tags were attached to every movement by first extracting keywords
-  from their English description, and second adding more detailed tags while
+  from their English description, and then adding more detailed tags while
   performing the pattern.
 
   The first movement in Chon-Ji, for instance, is to ``[m]ove the left foot to
   B, forming a left walking stance toward B while executing a low block to B
   with the left forearm\cite{cyclo:vol1}.'' Removing the verbose parts of the
-  description we are left with:
+  description leaves us with:
 
   \[
     \{left \: walking \: stance, \: low \: block, \: left \: forearm\}
@@ -304,7 +306,37 @@ texpreamble("\def\V#1{\bm{#1}}");
 
 \SubSection{Classification}
 
-% TODO: introduction
+  Classification is done by attaching metadata, in terms of tags, to each
+  pattern movement. In most cases, applying tags to movements have been
+  straightforward. However, there are movements that need special mention.
+  These movements fall into two categories.
+
+  The first category consist of movements where both arms are part of the
+  technique by either forming the technique, or by being two separate
+  techniques in a single movement.
+
+  When both arms are used in one technique, the movement has been tagged with
+  $\{left\_technique, \: right\_technique\}$ to reflect that both arms are
+  needed for the technique, or that the movement contains two separate hand
+  techniques.
+
+  An example of a movement where both arms are required to form the technique
+  can be found in the 13\textsuperscript{th} movement of Joong-Gun Tul, which
+  is \emph{Gunnun so kyocha joomuk chukyo makgi}.
+
+  When it comes to a movement with two separate hand techniques, the
+  27\textsuperscript{th} movement of Joong-Gun Tul, being \emph{Nachuo so
+  sonbadak noollo makgi}, serves as a nice illustration.
+
+  The implications of tagging movements with $\{left\_technique, \:
+  right\_technique\}$ is that the total amount of hand techniques on either
+  side are higher than what actually is the case. This flaw does not affect
+  the bias we are investigating.
+
+  The second category comprises ambiguous movements, and thus contain
+  clarification on why certain tags were added.
+
+  Below is a list of all the special cases from both categories.
 
 \begin{itemize}
   \item
@@ -347,11 +379,13 @@ texpreamble("\def\V#1{\bm{#1}}");
       \item
         {\bf Movement 11}, \emph{Gunnun so sang sewo jirugi}, is tagged as a
         left and right technique, with $\{left\_technique, \:
-        right\_technique\}$.
+        right\_technique\}$. This increases the total amount of punches on
+        both sides.
       \item
         {\bf Movement 12}, \emph{Gunnun so sang dwijibo jirugi}, is tagged as
         a left and right technique, with $\{left\_technique, \:
-        right\_technique\}$.
+        right\_technique\}$. This increases the total amount of punches on
+        both sides.
       \item
         {\bf Movement 13}, \emph{Gunnun so kyocha joomuk chukyo makgi}, is
         tagged as a left and a right technique with $\{left\_technique, \:
@@ -383,7 +417,8 @@ texpreamble("\def\V#1{\bm{#1}}");
       \item
         {\bf Movement 8}, \emph{Gunnun so sang joomuk nopunde sewo jirugi}, is
         tagged as a left and right technique, with $\{left\_technique, \:
-        right\_technique\}$.
+        right\_technique\}$. This increases the total amount of punches on
+        both sides.
       \item
         {\bf Movement 20}, \emph{Gunnun sogi}, has only the stance registered
         as part of the terminology though the English description says to
@@ -436,15 +471,18 @@ texpreamble("\def\V#1{\bm{#1}}");
       \item
         {\bf Movement 31}, \emph{Gunnun so sang sewo jirugi}, is tagged as a
         left and right technique, with $\{left\_technique, \:
-        right\_technique\}$.
+        right\_technique\}$. This increases the total amount of punches on
+        both sides.
       \item
         {\bf Movement 32}, \emph{Gunnun so sang joomuk dwijibo jirugi}, is
         tagged as a left and right technique, with $\{left\_technique, \:
-        right\_technique\}$.
+        right\_technique\}$. This increases the total amount of punches on
+        both sides.
       \item
         {\bf Movement 36}, \emph{Gunnun so sang joomuk dwijibo jirugi}, is
         tagged as a left and right technique, with $\{left\_technique, \:
-        right\_technique\}$.
+        right\_technique\}$. This increases the total amount of punches on
+        both sides.
     \end{itemize}
   \item
     \emph{Po-Eun Tul}
@@ -519,7 +557,8 @@ texpreamble("\def\V#1{\bm{#1}}");
       \item
         {\bf Movement 24}, \emph{Gunnun so sang sewo jirugi}, is tagged as a
         left and right technique, with $\{left\_technique, \:
-        right\_technique\}$.
+        right\_technique\}$. This increases the total amount of punches on
+        both sides.
       \item
         {\bf Movement 25}, \emph{Gunnun so nopunde doo bandalson makgi}, is
         tagged as a left and a right technique with $\{left\_technique, \:
@@ -528,7 +567,8 @@ texpreamble("\def\V#1{\bm{#1}}");
       \item
         {\bf Movement 34}, \emph{Gunnun so sang sewo jirugi}, is tagged as a
         left and right technique, with $\{left\_technique, \:
-        right\_technique\}$.
+        right\_technique\}$. This increases the total amount of punches on
+        both sides.
       \item
         {\bf Movement 36}, \emph{Annun so gutja makgi}, is tagged as a left
         and a right technique with $\{left\_technique, \: right\_technique\}$.
