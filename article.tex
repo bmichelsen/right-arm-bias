@@ -246,12 +246,34 @@ texpreamble("\def\V#1{\bm{#1}}");
 \SubSection{Approach}
 
   The movement number, together with the English description of each movement,
-  were registered manually from the condensed encyclopedia. After reviewing
-  and making minor corrections to the terminology data, it too was added.
+  was registered manually from the condensed encyclopedia. After reviewing and
+  making minor corrections to the terminology, it too was added to the
+  dataset.
   
   Suitable tags were attached to every movement by first extracting keywords
   from their English description, and then adding more detailed tags while
   performing the pattern.
+
+  We then defined the data models with DataMapper, an Object Relational
+  Mapper\footnote{\url{http://www.datamapper.org}} (ORM) written in Ruby. The
+  models are Ruby classes with properties and associations. Properties define
+  field names and data types in the database, whereas the associations defines
+  the relationships and cardinality between the models.
+
+  Next we created a Ruby script that reads the dataset and automatically
+  populates the database. It sets up associations between models, and adds the
+  appropriate tags to every movement, as well as associations between movement
+  and pattern.
+
+  Tagging movements in such a formalized manner, and registering it in a
+  database, enables us to retrieve the data we are interested in using
+  concepts from set theory.
+
+
+\SubSection{Classification}
+
+  Classification is done by attaching metadata, in terms of tags, to each
+  pattern movement.
 
   The first movement in Chon-Ji, for instance, is to ``[m]ove the left foot to
   B, forming a left walking stance toward B while executing a low block to B
@@ -262,7 +284,7 @@ texpreamble("\def\V#1{\bm{#1}}");
     \{left \: walking \: stance, \: low \: block, \: left \: forearm\}
   \]
 
-  Supplementing the above with tags containing more information gives us:
+  Supplementing the above with more detailed tags gives us:
 
   \begin{align*}
     \{walking \: stance, \: left \: stance, \: low \: technique, \\
@@ -271,33 +293,17 @@ texpreamble("\def\V#1{\bm{#1}}");
   \end{align*}
 
   Information about the stance type is presented first, followed by stance
-  side (left, right or none where applicable --- ie. sitting stance),
-  technique height (low, middle, high), technique side (left arm or right arm,
-  can also be both), direction of the technique (when needed), primary
-  technique type (attack, block, kick), technique group (punch, strike,
-  thrust), tool group (forearm, knife hand, finger etc.), tool (inner forearm,
-  outer forearm, double finger etc.), and finally motion type (normal motion,
-  slow motion, consecutive motion and so on).
+  side (left, right or none where applicable --- for example a sitting
+  stance), technique height (low, middle, high), technique side (left arm or
+  right arm, it can also be both), direction of the technique (when needed),
+  primary technique type (attack, block, kick), technique group (punch,
+  strike, thrust), tool group (forearm, knife hand, finger etc.), tool (inner
+  forearm, outer forearm, double finger etc.), and finally motion type (normal
+  motion, slow motion, consecutive motion and so on).
 
-  % FIXME add database and ruby script info here
-  % modelled the project in the database (./models)
-  %   explain all attributes etc.
-  % made a ruby script to parse the text files (link to bootstrap.rb ?)
-  %   adding the contents into a database using datamapper (orm) (link to datamapper) || populated the database using Datamapper (orm)
-  %   saving the data into an sqlite3 database for analysis
-  %
-
-  Tagging movements in such a formalized manner, and registering it in a
-  database, enables us to retrieve the data we are interested in using
-  concepts from set theory.
-
-
-\SubSection{Classification}
-
-  Classification is done by attaching metadata, in terms of tags, to each
-  pattern movement. In most cases, applying tags to movements have been
-  straightforward. However, there are movements that need special mention.
-  These movements fall into two categories.
+  In most cases, applying tags to movements have been straightforward.
+  However, there are movements that need special mention.  These movements
+  fall into two categories.
 
   The first category consist of movements where both arms are part of the
   technique by either forming the technique, or by being two separate
