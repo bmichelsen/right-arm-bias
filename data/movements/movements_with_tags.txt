@@ -732,7 +732,7 @@ Toi-Gae
     Move the left foot to D, forming a left walking stance toward D while executing a pressing block with an X-fist
 
 8.  Gunnun so sang sewo jirugi Perform 7 and 8 in a continuous motion.
-    walking_stance, left_stance, high_technique, left_technique, right_technique, attack, punch, vertical_punch, twin_fist, continuous motion
+    walking_stance, left_stance, high_technique, left_technique, right_technique, attack, punch, vertical_punch, twin_fist, continuous_motion
     Execute a high vertical punch to D with a twin fist while maintaining a left walking stance toward D. Perform 7 and 8 in a continuous motion
 
 9.  Kaunde apcha busigi
