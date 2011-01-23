@@ -1,5 +1,4 @@
 require_relative 'lab'
-#require "/home/bjorn/scm/git/articles/left_arm_bias/lab.rb"
 
 # ----------------------------------------------------------------------
 # Database migration
@@ -7,6 +6,10 @@ require_relative 'lab'
 
 puts "Migrating the database.."
 
+# check models for validity and initialize all properties
+DataMapper.finalize
+
+# migrate the database
 DataMapper.auto_migrate!
 
 # ----------------------------------------------------------------------
