@@ -1,0 +1,6 @@
+# Right techniques by motion type except normal motion
+Motions   Flying    Fast    Slow    Sliding   Stamping    Continuous    Jumping   Consecutive   Connecting    Skipping    Dodging   DoubleStepping    Shifting
+Blocks    1         0       5       2         2           11            2         0             1             0           1         1                 1
+Punches   1         8       3       1         4           3             0         1             2             0           0         0                 0
+Strikes   0         0       1       0         2           0             3         0             0             0           0         0                 0
+Thrusts   0         0       5       4         0           2             0         0             0             0           0         0                 0

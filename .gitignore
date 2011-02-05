@@ -1,9 +1,9 @@
 article.asy
 article-?.asy
+article-?.eps
 article.pre
 *.aux
 *.dvi
-*.eps
 *.log
 *.pdf
 *.sqlite3

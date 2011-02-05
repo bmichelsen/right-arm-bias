@@ -675,24 +675,12 @@ texpreamble("\def\V#1{\bm{#1}}");
   total amount of techniques, only 7 techniques (about 1\%) separates an even
   distribution to both sides.
 
-
-
-%Techniques by
-  %tool group (forearm, knife hand, finger etc.)
-  %tool (inner forearm, outer forearm, double finger etc.)
-
-
-
-
-
-  
 \SubSection{Techniques by Groups}
 
-% what is the groups of techniques?
+% what are the groups of techniques?
 
 
   Table 2: Percent distribution by arm per category
-  Figures 1, 2, 3
 
 
 
@@ -705,18 +693,6 @@ texpreamble("\def\V#1{\bm{#1}}");
   It is worth noting that there are more blocks with the left side than with
   the right side. That is, there are more attacks with the right arm than with
   the left arm.
-
-
-
-\SubSection{Techniques by Patterns}
-
-\SubSection{Techniques by Stances}
-
-\SubSection{Techniques by Height}
-
-\SubSection{Techniques by Motion Type}
-
-
 
 
 
@@ -756,12 +732,198 @@ texpreamble("\def\V#1{\bm{#1}}");
 
 
 
+\SubSection{Techniques by Height}
+
+  % all techniques by height
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/height_all}
+    \caption{All techniques by height}
+    \label{fig:height_all}
+  \end{figure}
+
+  Techniques by height follow the same pattern when looking at all techniques,
+  as well as both sides. Most of the techniques are in the middle section,
+  except for strikes which there are more of in the high section. There are
+  very few punches, strikes and thrusts to the low section. In general, there
+  are more blocks than any other technique.
 
 
 
 
-  \includegraphics[width=9cm]{all}
-  \includegraphics[width=9cm]{motion_type_all}
+
+\SubSection{Techniques by Patterns}
+
+
+  % all techniques by patterns
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/patterns_all}
+    \caption{All techniques by patterns}
+    \label{fig:patterns_all}
+  \end{figure}
+
+  % left techniques by patterns
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/patterns_left}
+    \caption{Left techniques by patterns}
+    \label{fig:patterns_left}
+  \end{figure}
+
+  % right techniques by patterns
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/patterns_right}
+    \caption{Right techniques by patterns}
+    \label{fig:patterns_right}
+  \end{figure}
+
+
+
+
+
+
+
+  % all techniques by black belt patterns
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/patterns_black_all}
+    \caption{All techniques by black belt patterns}
+    \label{fig:patterns_black_all}
+  \end{figure}
+
+
+  % left techniques by black belt patterns
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/patterns_black_left}
+    \caption{Left techniques by black belt patterns}
+    \label{fig:patterns_black_left}
+  \end{figure}
+
+  % right techniques by black belt patterns
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/patterns_black_right}
+    \caption{Right techniques by black belt patterns}
+    \label{fig:patterns_black_right}
+  \end{figure}
+
+
+
+  % all techniques by color belt patterns
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/patterns_color_all}
+    \caption{All techniques by color belt patterns}
+    \label{fig:patterns_color_all}
+  \end{figure}
+
+
+  % left techniques by color belt patterns
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/patterns_color_left}
+    \caption{Left techniques by color belt patterns}
+    \label{fig:patterns_color_left}
+  \end{figure}
+
+  % right techniques by color belt patterns
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/patterns_color_right}
+    \caption{Right techniques by color belt patterns}
+    \label{fig:patterns_color_right}
+  \end{figure}
+
+
+
+
+
+\SubSection{Techniques by Stances}
+
+  % All techniques by stances
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/stances_all}
+    \caption{All techniques by stances}
+    \label{fig:stances_all}
+  \end{figure}
+
+  % Left techniques by stances
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/stances_left}
+    \caption{Left techniques by stances}
+    \label{fig:stances_left}
+  \end{figure}
+
+  % Right techniques by stances
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/stances_right}
+    \caption{Right techniques by stances}
+    \label{fig:stances_right}
+  \end{figure}
+
+
+  % All techniques by stances except walking, sitting and L
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/stances_not_wsl}
+    \caption{All techniques by stances except walking, sitting and L}
+    \label{fig:stances_not_wsl}
+  \end{figure}
+
+  % Left techniques by stances except walking, sitting and L
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/stances_left_not_wsl}
+    \caption{Left techniques by stances except walking, sitting and L}
+    \label{fig:stances_left_not_wsl}
+  \end{figure}
+
+  % Right techniques by stances except walking, sitting and L
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/stances_right_not_wsl}
+    \caption{Right techniques by stances except walking, sitting and L}
+    \label{fig:stances_right_not_wsl}
+  \end{figure}
+
+
+
+
+
+
+
+\SubSection{Techniques by Motion Type}
+
+  % all techniques by motion type
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/motion_all}
+    \caption{All techniques by all motion types}
+    \label{fig:motion_all}
+  \end{figure}
+
+  Most techniques are normal motion, followed by fast motion and continuous
+  motion.
+
+  There are more motion types on the right side, than on the left. Right side
+  has flying motion and consecutive motion, whereas the left side does not.
+  There are more flying, slow, sliding and consecutive motions on the right
+  side. On the left side, there are more fast, stamping continuous and
+  connecting motions than on the right side.
+
+  There are equal amounts of slow, jumping, dodging, double stepping, shifting
+  motions on both sides, although with different groups of techniques.
+
+  % all techniques by motion type except normal motion
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/motion_all_not_n}
+    \caption{All techniques by motion type except normal motion}
+    \label{fig:motion_all_not_n}
+  \end{figure}
+
+  % left techniques by motion type except normal motion
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/motion_left_not_n}
+    \caption{Left techniques by motion type except normal motion}
+    \label{fig:motion_left_not_n}
+  \end{figure}
+
+  % right techniques by motion type except normal motion
+  \begin{figure}
+    \includegraphics[scale=0.72]{data/gnuplot/eps/motion_right_not_n}
+    \caption{Right techniques by motion type except normal motion}
+    \label{fig:motion_right_not_n}
+  \end{figure}
+
 
 
 
@@ -788,7 +950,7 @@ texpreamble("\def\V#1{\bm{#1}}");
 %potentially generalizable, or specific to a particular case?
 
 
-% Is it possible to say anything about why there are more blocks with the
+% Is it possible to say anything about why there are more techniques with the
 % right hand, than with the right?
 
 % Observation: Kicks happen between stances
