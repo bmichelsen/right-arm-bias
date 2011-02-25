@@ -1,6 +1,6 @@
-# Right techniques by stances
-Stances   L   Walking   Fixed   Sitting   Close   Low   Rear Foot   X   One Leg   Diagonal    Bending Ready Stance A    Bending Ready Stance B    Parallel    Vertical
-Blocks    44  44        3       18        3       4     6           5   2         1           3                         0                         0           0
-Punches   7   46        3       9         3       0     0           0   1         0           0                         0                         1           0
-Strikes   12  14        0       6         3       0     0           2   0         0           0                         0                         0           1
-Thrusts   2   10        0       2         2       3     2           0   0         0           0                         0                         0           0
+# Right techniques by walking, sitting and L stances
+Stances   Walking   Sitting   L
+Blocks    44        18        44
+Punches   46        9         7
+Strikes   14        6         12
+Thrusts   10        2         2
