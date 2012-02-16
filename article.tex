@@ -37,7 +37,7 @@ texpreamble("\def\V#1{\bm{#1}}");
 \begin{document}
 
 % Make the title bold
-\title{\bf The Left Arm Bias in ITF Taekwon-Do Patterns \\ Chon-Ji to Juche}
+\title{\bf The Right Arm Bias in ITF Taekwon-Do \\ Patterns Chon-Ji to Juche}
 
 % Author information
 \author{Bjørn Michelsen, III. Dan \\
@@ -95,7 +95,7 @@ texpreamble("\def\V#1{\bm{#1}}");
   leg bias still holds.
 
   In this article we analyze hand techniques in patterns Chon-Ji to Juche
-  using tags, and then report our findings of a left arm bias.
+  using tags, and then report our findings of a right arm bias.
 
 
 \SubSection{Tags}
@@ -109,7 +109,7 @@ texpreamble("\def\V#1{\bm{#1}}");
 
   Folder names are in themselves informative, in that, like tags, they
   describe the information held within them\cite{jones:folders}. Furthermore,
-  they way folder names relate to each other show a structural relationship
+  the way folder names relate to each other show a structural relationship
   between directories\cite{mathes:folk}.
 
   \emph{Tags}, on the other hand, are non-hierarchical descriptive terms,
@@ -219,9 +219,8 @@ texpreamble("\def\V#1{\bm{#1}}");
 \Section{Method}
 
   In this section we describe where the data originates. Next we elaborate on
-  the approach taken to register and investigate the dataset. Finally, we have
-  a look at how each movement has been classified with emphasis on special
-  cases.
+  the approach taken to register and investigate the dataset. Finally, a look
+  at how each movement has been classified with emphasis on special cases.
 
 
 \SubSection{The Data}
@@ -255,10 +254,11 @@ texpreamble("\def\V#1{\bm{#1}}");
   performing the pattern.
 
   We then defined the data models with DataMapper, an Object Relational
-  Mapper\footnote{\url{http://www.datamapper.org}} (ORM) written in Ruby. The
-  models are Ruby classes with properties and associations. Properties define
-  field names and data types in the database, whereas the associations defines
-  the relationships and cardinality between the models.
+  Mapper\footnote{\url{http://www.datamapper.org}} (ORM) written in the Ruby
+  programming language. The models are Ruby classes with properties and
+  associations. Properties define field names and data types in the database,
+  whereas the associations defines the relationships and cardinality between
+  the models.
 
   Next we created a Ruby script that reads the dataset and automatically
   populates the database. It sets up associations between models, and adds the
@@ -320,7 +320,7 @@ texpreamble("\def\V#1{\bm{#1}}");
 
   When it comes to a movement with two separate hand techniques, the
   27\textsuperscript{th} movement of Joong-Gun Tul, being \emph{Nachuo so
-  sonbadak noollo makgi}, serves as a nice illustration.
+  sonbadak noollo makgi}, serves as a good illustration.
 
   The implications of tagging movements with $\{left\_technique, \:
   right\_technique\}$ is that the total amount of hand techniques on either
@@ -409,16 +409,16 @@ texpreamble("\def\V#1{\bm{#1}}");
         right\_technique\}$. This increases the total amount of blocks on both
         sides.
       \item
-        {\bf Movement 8}, \emph{Gunnun so sang joomuk nopunde sewo jirugi}, is
-        tagged as a left and right technique, with $\{left\_technique, \:
+        {\bf Movement 8}, \emph{Gunnun so sang sewo jirugi}, is tagged as a
+        left and right technique, with $\{left\_technique, \:
         right\_technique\}$. This increases the total amount of punches on
         both sides.
       \item
-        {\bf Movement 20}, \emph{Gunnun sogi}, has only the stance registered
-        as part of the terminology though the English description says to
-        ``[e]xtend both hands upward as if to grab the opponent's head.''
+        {\bf Movement 20}, \emph{Gunnun so}, has only the stance registered
+        although the English description says to ``[e]xtend both hands upward
+        as if to grab the opponent's head.''
       \item
-        {\bf Movement 29}, \emph{Kyocha so kyocha joomuk noollo makgi}, is
+        {\bf Movement 29}, \emph{Gunnun so kyocha joomuk noollo makgi}, is
         tagged as a left and a right technique with $\{left\_technique, \:
         right\_technique\}$. This increases the total amount of blocks on both
         sides.
@@ -468,13 +468,13 @@ texpreamble("\def\V#1{\bm{#1}}");
         right\_technique\}$. This increases the total amount of punches on
         both sides.
       \item
-        {\bf Movement 32}, \emph{Gunnun so sang joomuk dwijibo jirugi}, is
-        tagged as a left and right technique, with $\{left\_technique, \:
+        {\bf Movement 32}, \emph{Gunnun so sang dwijibo jirugi}, is tagged as
+        a left and right technique, with $\{left\_technique, \:
         right\_technique\}$. This increases the total amount of punches on
         both sides.
       \item
-        {\bf Movement 36}, \emph{Gunnun so sang joomuk dwijibo jirugi}, is
-        tagged as a left and right technique, with $\{left\_technique, \:
+        {\bf Movement 36}, \emph{Gunnun so sang dwijibo jirugi}, is tagged as
+        a left and right technique, with $\{left\_technique, \:
         right\_technique\}$. This increases the total amount of punches on
         both sides.
     \end{itemize}
@@ -742,10 +742,10 @@ texpreamble("\def\V#1{\bm{#1}}");
   \end{figure}
 
   Techniques by height follow the same trend when looking at all techniques
-  combined or techniques to either side (Figure \ref{fig:height_all}). In
-  general, there are more blocks than any other technique. Most of the
-  techniques are in the middle section, although there is a greater occurrence
-  of strikes in the high section, and very few attacks in the low section.
+  combined or techniques to either side. In general, there are more blocks
+  than any other technique. Most of the techniques are in the middle section,
+  although there is a greater occurrence of strikes in the high section, and
+  very few attacks in the low section (Figure \ref{fig:height_all}).
 
 
 \SubSection{Techniques by Stances}
@@ -759,8 +759,8 @@ texpreamble("\def\V#1{\bm{#1}}");
 
   Because most techniques are performed in walking, sitting and L stances, the
   graphs in this section have been split into two groups. One group shows the
-  majority of techniques (84 \%), while the other visualize techniques in
-  every other stance (16 \%).
+  majority of techniques (84 \%), while the other visualize techniques
+  performed in the remaining stances (16 \%).
 
   When looking at all techniques by walking stances, sitting stances and L
   stances (Figure \ref{fig:stances_all}), they roughly follow the same pattern
@@ -830,7 +830,7 @@ texpreamble("\def\V#1{\bm{#1}}");
   \end{figure}
 
   There are 14 different motion types registered in our data set. The larger
-  part of techniques (76 \%) are performed in normal motion (Figure
+  part of the techniques (76 \%) are performed in normal motion (Figure
   \ref{fig:motion_all}), followed by continuous motion (6 \%) and fast motion
   (4 \%).
 
@@ -970,7 +970,7 @@ texpreamble("\def\V#1{\bm{#1}}");
 
 
 % Is it possible to say anything about why there are more techniques with the
-% right hand, than with the right?
+% right hand, than with the left?
 
 % Observation: Kicks happen between stances
 
@@ -979,6 +979,14 @@ texpreamble("\def\V#1{\bm{#1}}");
 %   something about what stance is more suited for a technique, or to show a
 %   certain technique in a less/not used stance during step sparring to an
 %   understanding of techniques beyond patterns
+
+% {left_technique, right_technique} should probably have been tagged
+% {both_hands} as well.
+
+% Link to the source code.
+
+% Movements with several blocks should have a tag indicating that there are
+% more than one block in the movement.
 
 % Unnumbered section (note the '*')
 %\section*{Acknowledgments}
